@@ -46,19 +46,19 @@ check_dashboard_names <- function(import_files) {
       }
 
       else if (name_list[names] == "filters" || name_list[names] == "toelichting") {
-        print(paste0("Wrong DB name: '", name_list[names], "', not starting with an capital letter"))
+        message(paste0("Wrong DB name: '", name_list[names], "', not starting with an capital letter"))
       }
 
       else if (stringr::str_detect(name_list[names], "^\\d.") == F) {
-        print(paste0("Wrong DB name: '", name_list[names],"', not starting with a digit and a dot"))
+        message(paste0("Wrong DB name: '", name_list[names],"', not starting with a digit and a dot"))
       }
 
       else if (stringr::str_detect(name_list[names], "[A-Z]") == F) {
-        print(paste0("Wrong DB name: '", name_list[names], "', not starting with an capital letter"))
+        message(paste0("Wrong DB name: '", name_list[names], "', not starting with an capital letter"))
       }
 
       else if (grepl("DB", name_list[names]) == T) {
-        print(paste0("Wrong DB name: '", name_list[names], "', no 'DB' allowed in DB name"))
+        message(paste0("Wrong DB name: '", name_list[names], "', no 'DB' allowed in DB name"))
       }
       names <- names + 1
     }
