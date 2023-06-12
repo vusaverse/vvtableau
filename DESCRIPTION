@@ -1,0 +1,25 @@
+Package: vvtableau
+Type: Package
+Title: R Interface for Tableau Services
+Version: 0.0.1
+Authors@R: 
+    person("Tomer", "Iwan", , "t.iwan@vu.nl", role = c("aut", "cre", "cph"))
+Description: Provides numerous functions to fill data.
+    These can be applied either to missing or skewed data.
+    The functions are designed within the scope of Student Analytics. 
+URL: https://github.com/vusaverse/vvtableau
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Imports: 
+    data.table,
+    dplyr,
+    httr,
+    jsonlite,
+    magrittr,
+    purrr,
+    stringr,
+    tidyr,
+    XML,
+    xml2
