@@ -19,10 +19,10 @@ Furthermore, methods are included to interact with Tableau desktop. These method
 You can install the tableauR package from GitHub using the devtools package:
 
 ```{r}
-install.packages("vusaverse/vvtableau")
+devtools::install_github("vusaverse/vvtableau")
 library(vvtableau)
 ```
 
 ## Contributing
 
-Contributions to tableauR are welcome! If you encounter any bugs, have feature requests, or would like to contribute code improvements, please open an issue or submit a pull request on the GitHub repository.
+Contributions to vvtableau are welcome! If you encounter any bugs, have feature requests, or would like to contribute code improvements, please open an issue or submit a pull request on the GitHub repository.
