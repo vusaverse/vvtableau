@@ -47,7 +47,7 @@ Once connected, you can retrieve various information about Tableau Server using 
 
 
 ```{r jobs}
-get_server_jobs(base_url = [YOUR_TABLEAU_SERVER_URL],
+get_server_jobs(base_url = "https://tableau.server.com",
                             site_id = Sys.getenv("TABLEAU_API_SITE_ID"),
                             token = Sys.getenv("TABLEAU_API_TOKEN"),
                             page_size = 300)
