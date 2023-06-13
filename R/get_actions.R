@@ -6,6 +6,12 @@
 #' @export
 #'
 #' @family xml
+#' @examples
+#' \dontrun{
+#' # Get Workbook actions
+#' actions <- get_actions(wb = "path/to/workbook.twb")
+#' head(actions)
+#' }
 get_actions <- function(wb) {
   proc <- make_rootnodes(wb)
 

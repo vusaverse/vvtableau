@@ -35,6 +35,18 @@ NULL.
 \description{
 Download workbook from Tableau Server
 }
+\examples{
+\dontrun{
+# Download workbook from Tableau Server
+download_workbooks_server(base_url = "https://tableau.server.com",
+                          api_version = 3.4,
+                          site_id = "your_site_id",
+                          token = "your_access_token",
+                          workbook_id = "your_workbook_id",
+                          path_to_save = "path/to/save/workbook.twb",
+                          include_extract = FALSE)
+}
+}
 \seealso{
 Other tableau rest api: 
 \code{\link{authenticate_server}()},

@@ -2,7 +2,6 @@
 
 export("%>%")
 export(authenticate_server)
-export(check_dashboard_names)
 export(download_filtered_tableau_image)
 export(download_workbooks_server)
 export(download_workbooks_server_pdf)

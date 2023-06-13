@@ -15,9 +15,15 @@ Data source of the workbook
 \description{
 Search XMl for data source of tableau workbook
 }
+\examples{
+\dontrun{
+# Get Tableau data source
+data_source <- get_tableau_data_source(dashboard = "path/to/workbook.twb")
+print(data_source)
+}
+}
 \seealso{
 Other xml: 
-\code{\link{check_dashboard_names}()},
 \code{\link{get_actions}()},
 \code{\link{get_folders}()},
 \code{\link{get_hierarchy}()},

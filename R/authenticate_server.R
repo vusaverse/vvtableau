@@ -12,6 +12,18 @@
 #' @export
 #'
 #' @family tableau rest api
+#' @examples
+#' \dontrun{
+#' # Authenticate on the Tableau server
+#' authenticate_server(username = "your_username",
+#'                     password = "your_password",
+#'                     base_url = "https://tableau.server.com",
+#'                     api_version = 3.4)
+#' }
+#' # Check the set system variables
+#' Sys.getenv("TABLEAU_API_TOKEN")
+#' Sys.getenv("TABLEAU_API_SITE_ID")
+#' Sys.getenv("TABLEAU_API_USER_ID")
 authenticate_server <- function(username, password, base_url, api_version = 3.4) {
 
   credentials <- paste0('<credentials name="',

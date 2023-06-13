@@ -32,6 +32,17 @@ NULL.
 \description{
 Download workbook powerpoint from Tableau Server
 }
+\examples{
+\dontrun{
+# Download workbook PowerPoint from Tableau Server
+download_workbooks_server_powerpoint(base_url = "https://tableau.server.com",
+                                     api_version = 3.8,
+                                     site_id = "your_site_id",
+                                     token = "your_access_token",
+                                     workbook_id = "your_workbook_id",
+                                     path_to_save = "path/to/save/file.pptx")
+}
+}
 \seealso{
 Other tableau rest api: 
 \code{\link{authenticate_server}()},

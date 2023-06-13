@@ -12,6 +12,17 @@
 #' @export
 #'
 #' @family tableau rest api
+#' @examples
+#' \dontrun{
+#' # Get server jobs
+#' jobs <- get_server_jobs(base_url = "https://tableau.server.com",
+#'                         api_version = 3.4,
+#'                         site_id = "your_site_id",
+#'                         token = "your_access_token",
+#'                         page_size = 100,
+#'                         include_metadata = FALSE)
+#' head(jobs)
+#' }
 get_server_jobs <- function(base_url, api_version = 3.4, site_id, token, page_size = 100, include_metadata = FALSE) {
 
 

@@ -17,7 +17,6 @@ Get variable names from workbook.
 }
 \seealso{
 Other xml: 
-\code{\link{check_dashboard_names}()},
 \code{\link{get_actions}()},
 \code{\link{get_folders}()},
 \code{\link{get_hierarchy}()},

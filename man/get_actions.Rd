@@ -15,9 +15,15 @@ Dataframe containing the workbook actions.
 \description{
 Get Workbook actions
 }
+\examples{
+\dontrun{
+# Get Workbook actions
+actions <- get_actions(wb = "path/to/workbook.twb")
+head(actions)
+}
+}
 \seealso{
 Other xml: 
-\code{\link{check_dashboard_names}()},
 \code{\link{get_folders}()},
 \code{\link{get_hierarchy}()},
 \code{\link{get_nodenames}()},

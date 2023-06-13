@@ -13,8 +13,18 @@
 #' @export
 #'
 #' @family tableau rest api
+#' @examples
+#' \dontrun{
+#' # Download workbook from Tableau Server
+#' download_workbooks_server(base_url = "https://tableau.server.com",
+#'                           api_version = 3.4,
+#'                           site_id = "your_site_id",
+#'                           token = "your_access_token",
+#'                           workbook_id = "your_workbook_id",
+#'                           path_to_save = "path/to/save/workbook.twb",
+#'                           include_extract = FALSE)
+#' }
 download_workbooks_server <- function(base_url, api_version = 3.4, site_id, token, workbook_id, path_to_save, include_extract = FALSE) {
-
 
   url <- paste0(base_url,
                 "api/",
