@@ -26,6 +26,9 @@ download_filtered_tableau_image(
 
 \item{path_to_save}{The directory to write the images to}
 }
+\value{
+NULL.
+}
 \description{
 Download filtered tableau views to png images from dataframe
 }
