@@ -4,7 +4,7 @@ Title: R Interface for Tableau Services
 Version: 0.0.1.9001
 Authors@R: 
     person("Tomer", "Iwan", , "t.iwan@vu.nl", role = c("aut", "cre", "cph"))
-Description:  Provides an R interface for interacting with the Tableau Server. 
+Description: Provides an R interface for interacting with the Tableau Server. 
     It allows users to perform various operations such as publishing workbooks, refreshing data extracts, 
     and managing users using the Tableau REST API. Additionally, 
     it includes functions to perform manipulations on local Tableau workbooks.
@@ -24,3 +24,7 @@ Imports:
     tidyr,
     XML,
     xml2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

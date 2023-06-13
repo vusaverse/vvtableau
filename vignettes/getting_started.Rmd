@@ -1,0 +1,63 @@
+---
+title: "Getting Started"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  eval = FALSE,
+  comment = "#>"
+)
+```
+
+# Introduction
+
+The `vvtableau` package provides an interface for interacting with Tableau Server using the Tableau REST API. This vignette will walk you through the main functionalities of the package, demonstrating how to authenticate, retrieve information, and perform various operations on Tableau Server.
+
+
+```{r setup}
+library(vvtableau)
+```
+
+# Authentication
+
+To begin, you need to authenticate and establish a connection to Tableau Server. Use the authenticate_server() function to provide the server URL, your username, and password. Here's an example:
+
+```{r authenticate}
+authenticate_server(server = "https://tableau.server.com",
+                    username = "your_username",
+                    password = "your_password")
+```
+
+When authentication has succeeded the following system variables will be set: 
+- `TABLEAU_API_TOKEN`
+- `TABLEAU_API_USER_ID`
+- `TABLEAU_API_SITE_ID`
+
+These variables are required in order to use the Server methods.
+
+# Retrieving Server Information
+
+Once connected, you can retrieve various information about Tableau Server using the provided functions. Here is an example to retrieve the jobs on the server:
+
+
+```{r jobs}
+get_server_jobs(base_url = [YOUR_TABLEAU_SERVER_URL],
+                            site_id = Sys.getenv("TABLEAU_API_SITE_ID"),
+                            token = Sys.getenv("TABLEAU_API_TOKEN"),
+                            page_size = 300)
+```
+
+
+# Conclusion
+
+This vignette covered the basic functionalities of the `vvtableau` package, including authentication, retrieving server information, publishing workbooks, managing users and groups, and downloading workbooks and views. For a complete list of functions and their parameters, please refer to the package documentation.
+
+Please note that this vignette serves as a brief introduction to the package and its capabilities. For more detailed instructions and examples, consult the package documentation and explore the individual function documentation.
+
+We hope you find the `vvtableau` package helpful in automating your Tableau workflows and enhancing your Tableau Server experience!
