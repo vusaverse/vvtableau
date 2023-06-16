@@ -50,6 +50,8 @@ download_workbooks_server(base_url = "https://tableau.server.com",
 \seealso{
 Other tableau rest api: 
 \code{\link{authenticate_server}()},
+\code{\link{download_filtered_tableau_image}()},
+\code{\link{download_tableau_crosstab_excel}()},
 \code{\link{download_workbooks_server_pdf}()},
 \code{\link{download_workbooks_server_powerpoint}()},
 \code{\link{get_server_connected_apps}()},

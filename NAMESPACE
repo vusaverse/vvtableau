@@ -3,6 +3,8 @@
 export("%>%")
 export(authenticate_server)
 export(download_filtered_tableau_image)
+export(download_tableau_crosstab_excel)
+export(download_tableau_data)
 export(download_workbooks_server)
 export(download_workbooks_server_pdf)
 export(download_workbooks_server_powerpoint)

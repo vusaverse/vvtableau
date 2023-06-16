@@ -32,3 +32,23 @@ NULL.
 \description{
 Download filtered tableau views to png images from dataframe
 }
+\seealso{
+Other tableau rest api: 
+\code{\link{authenticate_server}()},
+\code{\link{download_tableau_crosstab_excel}()},
+\code{\link{download_workbooks_server_pdf}()},
+\code{\link{download_workbooks_server_powerpoint}()},
+\code{\link{download_workbooks_server}()},
+\code{\link{get_server_connected_apps}()},
+\code{\link{get_server_datasources}()},
+\code{\link{get_server_groups}()},
+\code{\link{get_server_info}()},
+\code{\link{get_server_jobs}()},
+\code{\link{get_server_projects}()},
+\code{\link{get_server_refresh_tasks}()},
+\code{\link{get_server_schedules}()},
+\code{\link{get_server_users}()},
+\code{\link{get_server_views}()},
+\code{\link{get_server_workbooks}()}
+}
+\concept{tableau rest api}

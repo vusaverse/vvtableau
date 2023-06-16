@@ -7,6 +7,7 @@
 #' @param view_id The id of the view to download
 #' @param path_to_save The directory to write the images to
 #' @return NULL.
+#' @family tableau rest api
 #'
 #' @export
 download_filtered_tableau_image <- function(df, base_url, site_id, token, view_id, path_to_save) {

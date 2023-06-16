@@ -32,6 +32,8 @@ Get Extract refresh tasks from Tableau Server
 \seealso{
 Other tableau rest api: 
 \code{\link{authenticate_server}()},
+\code{\link{download_filtered_tableau_image}()},
+\code{\link{download_tableau_crosstab_excel}()},
 \code{\link{download_workbooks_server_pdf}()},
 \code{\link{download_workbooks_server_powerpoint}()},
 \code{\link{download_workbooks_server}()},
