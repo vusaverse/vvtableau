@@ -9,7 +9,8 @@ download_tableau_crosstab_excel(
   site_id,
   token,
   view_id,
-  path_to_save
+  path_to_save,
+  api_version = 3.16
 )
 }
 \arguments{

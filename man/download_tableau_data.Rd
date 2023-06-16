@@ -4,7 +4,14 @@
 \alias{download_tableau_data}
 \title{Download Tableau view data as Excel}
 \usage{
-download_tableau_data(base_url, site_id, token, view_id, path_to_save)
+download_tableau_data(
+  base_url,
+  site_id,
+  token,
+  view_id,
+  path_to_save,
+  api_version = 3.8
+)
 }
 \arguments{
 \item{base_url}{Tableau server URL}
