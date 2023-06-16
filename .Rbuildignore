@@ -2,3 +2,7 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^build_vvCommander.R
+^\.github$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

@@ -8,7 +8,8 @@ Description: Provides an R interface for interacting with the 'Tableau' Server.
     It allows users to perform various operations such as publishing workbooks, refreshing data extracts, 
     and managing users using the 'Tableau' REST API (see <https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_ref.htm> for details). Additionally, 
     it includes functions to perform manipulations on local 'Tableau' workbooks.
-URL: https://github.com/vusaverse/vvtableau
+URL: https://github.com/vusaverse/vvtableau,
+    https://vusaverse.github.io/vvtableau/
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
