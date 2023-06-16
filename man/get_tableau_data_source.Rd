@@ -2,18 +2,18 @@
 % Please edit documentation in R/get_tableau_data_source.R
 \name{get_tableau_data_source}
 \alias{get_tableau_data_source}
-\title{get tableau data source}
+\title{Get Tableau data source}
 \usage{
 get_tableau_data_source(dashboard)
 }
 \arguments{
-\item{dashboard}{path to Tableau twb file.}
+\item{dashboard}{Path to Tableau twb file.}
 }
 \value{
 Data source of the workbook
 }
 \description{
-Search XMl for data source of tableau workbook
+Search XML for data source of Tableau workbook
 }
 \examples{
 \dontrun{
