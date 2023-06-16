@@ -1,8 +1,8 @@
-#' get tableau data source
+#' Get Tableau data source
 #'
-#' Search XMl for data source of tableau workbook
+#' Search XML for data source of Tableau workbook
 #'
-#' @param dashboard path to Tableau twb file.
+#' @param dashboard Path to Tableau twb file.
 #'
 #' @return Data source of the workbook
 #' @export
@@ -15,7 +15,6 @@
 #' }
 get_tableau_data_source <- function(dashboard) {
   data <- xml2::read_xml(dashboard)
-  source <- xml2::xml_find_all(data, "//@filename")
-  return(xml2::xml_text(source))
+  data_source <- xml2::xml_find_all(data, "//@filename")
+  return(xml2::xml_text(data_source))
 }
-
