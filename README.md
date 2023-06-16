@@ -1,5 +1,6 @@
 # vvtableau #
 
+[![CodeFactor](https://www.codefactor.io/repository/github/vusaverse/vvtableau/badge)](https://www.codefactor.io/repository/github/vusaverse/vvtableau)
 [![R-CMD-check](https://github.com/vusaverse/vvtableau/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/vusaverse/vvtableau/actions/workflows/R-CMD-check.yaml)
 
 The `vvtableau` package is an R interface for interacting with Tableau Server using the Tableau REST API. It provides a convenient way to automate Tableau tasks, such as publishing workbooks, refreshing data extracts, managing users and groups, and retrieving information about server objects directly from R. Additionally, it includes functions to download filtered views, workbooks, and export them to different formats like PDF and PowerPoint.
