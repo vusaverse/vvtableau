@@ -7,7 +7,7 @@
 #'
 #' @family xml
 get_nodenames <- function(proc) {
-  nodenames <- sapply(1:length(XML::xmlChildren(proc)), function(x) {
+  nodenames <- sapply(seq_along(XML::xmlChildren(proc)), function(x) {
     XML::xmlName(proc[[x]])
   })
 
