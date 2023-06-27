@@ -36,7 +36,7 @@
 - [ ] Get Connected App Secret
 - [ ] List All Registered EAS
                                              - This method is not available for Tableau Server.
-- [ ] List Connected Apps
+- [x] List Connected Apps
 - [ ] List Registered EAS
                                              - This method is not available for Tableau Server.
 - [ ] Register EAS
@@ -78,7 +78,7 @@
 - [ ] Publish Data Source
 - [ ] Query Data Source
 - [ ] Query Data Source Connections
-- [ ] Query Data Sources
+- [x] Query Data Sources
 - [ ] Remove Data Source Revision
 - [ ] Update Data in Hyper Connection
 - [ ] Update Data in Hyper Data Source
@@ -97,7 +97,7 @@
 - [ ] Get Extract Refresh Task
 - [ ] List Extract Refresh Tasks in Server Schedule
                                              - Not available for Tableau Cloud.
-- [ ] List Extract Refresh Tasks in Site
+- [x] List Extract Refresh Tasks in Site
 - [ ] Reencrypt Extracts in a Site
 - [ ] Run Extract Refresh Task
 - [ ] Update Cloud extract refresh task
@@ -180,10 +180,10 @@
 - [ ] Get Data Acceleration Tasks in a Site
 - [ ] Get Server Schedule
                                              - Not available for Tableau Cloud.
-- [ ] List Server Schedules
+- [x] List Server Schedules
                                              - Not available for Tableau Cloud.
 - [ ] Query Job
-- [ ] Query Jobs
+- [x] Query Jobs
 - [ ] Update Server Schedule
                                              - Not available for Tableau Cloud.
 - [ ] Add (or Update) Quality Warning Trigger
@@ -335,7 +335,7 @@
 - [ ] Query Workbook Permissions
 - [ ] Create Project
 - [ ] Delete Project
-- [ ] Query Projects
+- [x] Query Projects
 - [ ] Update Project
 - [ ] Append to File Upload
 - [ ] Initiate File Upload
@@ -381,9 +381,9 @@
 - [ ] Delete Users from Site with CSV
 - [ ] Get Groups for a User
 - [ ] Get Users in Group
-- [ ] Get Users on Site
+- [x] Get Users on Site
 - [ ] Import Users to Site from CSV
-- [ ] Query Groups
+- [x] Query Groups
 - [ ] Query User On Site
 - [ ] Remove User from Group
 - [ ] Remove User from Site
@@ -401,10 +401,10 @@
 - [ ] Delete Tag from View
 - [ ] Delete Tag from Workbook
 - [ ] Delete Workbook
-- [ ] Download View Crosstab Excel
-- [ ] Download Workbook
-- [ ] Download Workbook PDF
-- [ ] Download Workbook PowerPoint
+- [x] Download View Crosstab Excel
+- [x] Download Workbook
+- [x] Download Workbook PDF
+- [x] Download Workbook PowerPoint
 - [ ] Download Workbook Revision
                                              - Available only if version history is enabled for the specified site.
 - [ ] Get Custom View
@@ -422,11 +422,11 @@
 - [ ] Query View Image
 - [ ] Query View PDF
 - [ ] Query View Preview Image
-- [ ] Query Views for Site
+- [x] Query Views for Site
 - [ ] Query Views for Workbook
 - [ ] Query Workbook Connections
 - [ ] Query Workbook Preview Image
-- [ ] Query Workbooks for Site
+- [x] Query Workbooks for Site
 - [ ] Query Workbooks for User
 - [ ] Unhide a Recommendation for a View
 - [ ] Update Custom View
