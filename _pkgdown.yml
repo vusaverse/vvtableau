@@ -2,18 +2,3 @@ url: https://vusaverse.github.io/vvtableau/
 template:
   bootstrap: 5
 
-reference:
-- title: Tableau REST API functions
-
-- subtitle: Download functions
-  desc: >
-    Functions to download content from Tableau Server.
-  contents:
-  - download_tableau_crosstab_excel
-  - download_tableau_data
-  - download_filtered_tableau_image
-  - download_workbooks_server
-  - download_workbooks_server_pdf
-  - download_workbooks_server_powerpoint
-
-
