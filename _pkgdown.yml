@@ -12,9 +12,9 @@ reference:
   - download_tableau_crosstab_excel
   - download_tableau_data
   - download_filtered_tableau_image
-  - download_workbook_server
-  - download_workbook_server_pdf
-  - download_workbook_server_powerpoint
+  - download_workbooks_server
+  - download_workbooks_server_pdf
+  - download_workbooks_server_powerpoint
 
 - subtitle: GET functions
   desc: >
