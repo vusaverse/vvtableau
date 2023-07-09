@@ -1,4 +1,4 @@
-# vvtableau #
+# vvtableau <a href='https://github.com/vusaverse/vvtableau'><img src="man/figures/hex-vvtableau.png" style="float:right; height:200px;" height="200" align="right"/></a>
 
 [![CodeFactor](https://www.codefactor.io/repository/github/vusaverse/vvtableau/badge)](https://www.codefactor.io/repository/github/vusaverse/vvtableau)
 [![R-CMD-check](https://github.com/vusaverse/vvtableau/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/vusaverse/vvtableau/actions/workflows/R-CMD-check.yaml)
