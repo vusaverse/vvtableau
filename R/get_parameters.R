@@ -7,7 +7,6 @@
 #'
 #' @family xml
 get_parameter <- function(wb) {
-
   proc <- make_rootnodes(wb)
 
   nodenames <- get_nodenames(proc)
@@ -24,6 +23,4 @@ get_parameter <- function(wb) {
   }), fill = TRUE)
 
   return(df)
-
 }
-

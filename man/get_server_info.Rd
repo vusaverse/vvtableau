@@ -2,41 +2,36 @@
 % Please edit documentation in R/get_server_info.R
 \name{get_server_info}
 \alias{get_server_info}
-\title{Get datasources from Tableau Server}
+\title{Get datasources from Tableau Server.}
 \usage{
 get_server_info(
-  base_url,
+  tableau,
   api_version = 3.4,
-  site_id,
-  token,
   page_size = 100,
   include_metadata = FALSE
 )
 }
 \arguments{
-\item{base_url}{The url of the Tableau Server.}
+\item{tableau}{A list containing the Tableau authentication variables: `base_url`, `token`, `user_id`, and `site_id`.}
 
-\item{api_version}{The api version; default set to 3.4}
+\item{api_version}{The API version to use (default: 3.4).}
 
-\item{site_id}{The site id of the Tableau server to access.}
+\item{page_size}{The number of records to retrieve per page (default: 100).}
 
-\item{token}{The access token to the Tableau Rest API.}
-
-\item{page_size}{Number of records to return; default is set to 100.}
-
-\item{include_metadata}{Whether to include metadata; default is set to FALSE}
+\item{include_metadata}{Logical indicating whether to include metadata columns in the result (default: FALSE).}
 }
 \value{
-Dataframe containing information on server site info.
+A data frame containing the server site information.
 }
 \description{
-Get datasources from Tableau Server
+Retrieves information about the Tableau server site using the provided authentication credentials.
 }
 \seealso{
-Other tableau rest api: 
+Other Tableau REST API: 
 \code{\link{authenticate_server}()},
 \code{\link{download_filtered_tableau_image}()},
 \code{\link{download_tableau_crosstab_excel}()},
+\code{\link{download_tableau_data}()},
 \code{\link{download_workbooks_server_pdf}()},
 \code{\link{download_workbooks_server_powerpoint}()},
 \code{\link{download_workbooks_server}()},
@@ -51,4 +46,4 @@ Other tableau rest api:
 \code{\link{get_server_views}()},
 \code{\link{get_server_workbooks}()}
 }
-\concept{tableau rest api}
+\concept{Tableau REST API}

@@ -20,4 +20,3 @@ get_server_location <- function(wb) {
   server_location <- cbind(XML::xpathSApply(proc[[xy]], ".", XML::xmlGetAttr, "derived-from"))
   return(as.character(server_location))
 }
-

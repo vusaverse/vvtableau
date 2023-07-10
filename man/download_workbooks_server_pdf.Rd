@@ -2,52 +2,36 @@
 % Please edit documentation in R/download_workbook_server_pdf.R
 \name{download_workbooks_server_pdf}
 \alias{download_workbooks_server_pdf}
-\title{Download workbook pdf from Tableau Server}
+\title{Download workbook PDF from Tableau Server.}
 \usage{
 download_workbooks_server_pdf(
-  base_url,
+  tableau,
   api_version = 3.4,
-  site_id,
-  token,
   workbook_id,
   path_to_save
 )
 }
 \arguments{
-\item{base_url}{The url of the Tableau Server.}
+\item{tableau}{A list containing the Tableau authentication variables: `base_url`, `token`, `user_id`, and `site_id`.}
 
-\item{api_version}{The api version; default set to 3.4}
+\item{api_version}{The API version to use (default: 3.4).}
 
-\item{site_id}{The site id of the Tableau server to access.}
+\item{workbook_id}{The identifier of the workbook to download.}
 
-\item{token}{The access token to the Tableau Rest API.}
-
-\item{workbook_id}{The identifier of the workbook.}
-
-\item{path_to_save}{Where to write the pdf file to}
+\item{path_to_save}{The file path to save the downloaded PDF file.}
 }
 \value{
 NULL.
 }
 \description{
-Download workbook pdf from Tableau Server
-}
-\examples{
-\dontrun{
-# Download workbook PDF from Tableau Server
-download_workbooks_server_pdf(base_url = "https://tableau.server.com",
-                              api_version = 3.4,
-                              site_id = "your_site_id",
-                              token = "your_access_token",
-                              workbook_id = "your_workbook_id",
-                              path_to_save = "path/to/save/file.pdf")
-}
+Downloads a PDF version of a workbook from the Tableau Server using the provided authentication credentials and saves it to the specified path.
 }
 \seealso{
-Other tableau rest api: 
+Other Tableau REST API: 
 \code{\link{authenticate_server}()},
 \code{\link{download_filtered_tableau_image}()},
 \code{\link{download_tableau_crosstab_excel}()},
+\code{\link{download_tableau_data}()},
 \code{\link{download_workbooks_server_powerpoint}()},
 \code{\link{download_workbooks_server}()},
 \code{\link{get_server_connected_apps}()},
@@ -62,4 +46,4 @@ Other tableau rest api:
 \code{\link{get_server_views}()},
 \code{\link{get_server_workbooks}()}
 }
-\concept{tableau rest api}
+\concept{Tableau REST API}

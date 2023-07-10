@@ -1,43 +1,37 @@
-#' Download workbook from Tableau Server
+#' Download workbook from Tableau Server.
 #'
-#' @param base_url The url of the Tableau Server.
-#' @param api_version The api version; default set to 3.4
-#' @param site_id The site id of the Tableau server to access.
-#' @param token The access token to the Tableau Rest API.
-#' @param workbook_id The identifier of the workbook.
-#' @param path_to_save Where to write the .twb or .twbx file to.
-#' @param include_extract Whether to include the extract file. Deafult set to FALES.
-#' @importFrom magrittr %>%
+#' Downloads a workbook from the Tableau Server using the provided authentication credentials and saves it to the specified path.
+#'
+#' @param tableau A list containing the Tableau authentication variables: `base_url`, `token`, `user_id`, and `site_id`.
+#' @param api_version The API version to use (default: 3.4).
+#' @param workbook_id The identifier of the workbook to download.
+#' @param path_to_save The file path to save the downloaded workbook.
+#' @param include_extract Logical indicating whether to include the extract file (default: FALSE).
 #'
 #' @return NULL.
 #' @export
 #'
-#' @family tableau rest api
-#' @examples
-#' \dontrun{
-#' # Download workbook from Tableau Server
-#' download_workbooks_server(base_url = "https://tableau.server.com",
-#'                           api_version = 3.4,
-#'                           site_id = "your_site_id",
-#'                           token = "your_access_token",
-#'                           workbook_id = "your_workbook_id",
-#'                           path_to_save = "path/to/save/workbook.twb",
-#'                           include_extract = FALSE)
-#' }
-download_workbooks_server <- function(base_url, api_version = 3.4, site_id, token, workbook_id, path_to_save, include_extract = FALSE) {
+#' @family Tableau REST API
+download_workbooks_server <- function(tableau, api_version = 3.4, workbook_id, path_to_save, include_extract = FALSE) {
+  base_url <- tableau$base_url
+  token <- tableau$token
+  site_id <- tableau$site_id
 
-  url <- paste0(base_url,
-                "api/",
-                api_version,
-                "/sites/",
-                site_id,
-                "/workbooks/",
-                workbook_id,
-                "/content?includeExtract=",
-                include_extract)
+  url <- paste0(
+    base_url,
+    "api/",
+    api_version,
+    "/sites/",
+    site_id,
+    "/workbooks/",
+    workbook_id,
+    "/content?includeExtract=",
+    include_extract
+  )
 
-  api_response <- httr::GET(url,
-                            httr::add_headers("X-Tableau-Auth" = token),
-                            httr::write_disk(path_to_save))
-
+  api_response <- httr::GET(
+    url,
+    httr::add_headers("X-Tableau-Auth" = token),
+    httr::write_disk(path_to_save)
+  )
 }

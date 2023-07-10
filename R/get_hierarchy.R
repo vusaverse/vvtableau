@@ -27,5 +27,4 @@ get_hierarchy <- function(wb) {
   }), fill = TRUE)
 
   return(df)
-
 }

@@ -1,42 +1,35 @@
-#' Download workbook powerpoint from Tableau Server
+#' Download workbook PowerPoint from Tableau Server.
 #'
-#' @param base_url The url of the Tableau Server.
-#' @param api_version The api version; default set to 3.8 [this function works for version 3.8 and later].
-#' @param site_id The site id of the Tableau server to access.
-#' @param token The access token to the Tableau Rest API.
-#' @param workbook_id The identifier of the workbook.
-#' @param path_to_save Where to write the .pptx file to
-#' @importFrom magrittr %>%
+#' Downloads a PowerPoint version of a workbook from the Tableau Server using the provided authentication credentials and saves it to the specified path.
+#'
+#' @param tableau A list containing the Tableau authentication variables: `base_url`, `token`, `user_id`, and `site_id`.
+#' @param api_version The API version to use (default: 3.8).
+#' @param workbook_id The identifier of the workbook to download.
+#' @param path_to_save The file path to save the downloaded PowerPoint file.
 #'
 #' @return NULL.
 #' @export
 #'
-#' @family tableau rest api
-#' @examples
-#' \dontrun{
-#' # Download workbook PowerPoint from Tableau Server
-#' download_workbooks_server_powerpoint(base_url = "https://tableau.server.com",
-#'                                      api_version = 3.8,
-#'                                      site_id = "your_site_id",
-#'                                      token = "your_access_token",
-#'                                      workbook_id = "your_workbook_id",
-#'                                      path_to_save = "path/to/save/file.pptx")
-#' }
-download_workbooks_server_powerpoint <- function(base_url, api_version = 3.8, site_id, token, workbook_id, path_to_save) {
+#' @family Tableau REST API
+download_workbooks_server_powerpoint <- function(tableau, api_version = 3.8, workbook_id, path_to_save) {
+  base_url <- tableau$base_url
+  token <- tableau$token
+  site_id <- tableau$site_id
 
+  url <- paste0(
+    base_url,
+    "api/",
+    api_version,
+    "/sites/",
+    site_id,
+    "/workbooks/",
+    workbook_id,
+    "/powerpoint"
+  )
 
-  url <- paste0(base_url,
-                "api/",
-                api_version,
-                "/sites/",
-                site_id,
-                "/workbooks/",
-                workbook_id,
-                "/powerpoint")
-
-  api_response <- httr::GET(url,
-                            httr::add_headers("X-Tableau-Auth" = token),
-                            httr::write_disk(path_to_save))
-
+  api_response <- httr::GET(
+    url,
+    httr::add_headers("X-Tableau-Auth" = token),
+    httr::write_disk(path_to_save)
+  )
 }
-

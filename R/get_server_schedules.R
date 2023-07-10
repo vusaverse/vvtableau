@@ -1,31 +1,37 @@
-#' Title
+#' Get schedules from Tableau server.
 #'
-#' @param base_url The url of the Tableau Server.
-#' @param api_version The api version; default set to 3.4
-#' @param token The access token to the Tableau Rest API.
-#' @param page_size Number of records to return; default is set to 100.
-#' @param include_metadata Whether to include metadata; default is set to FALSE
-#' @importFrom magrittr %>%
+#' Retrieves a list of schedules from the Tableau server using the provided authentication credentials.
 #'
-#' @return Dataframe containing information on server jobs.
+#' @param tableau A list containing the Tableau authentication variables: `base_url` and `token`.
+#' @param api_version The API version to use (default: 3.4).
+#' @param page_size The number of records to retrieve per page (default: 100).
+#' @param include_metadata Logical indicating whether to include metadata columns in the result (default: FALSE).
+#'
+#' @return A data frame containing the schedules information.
 #' @export
 #'
-#' @family tableau rest api
-get_server_schedules <- function(base_url, api_version = 3.4, token, page_size = 100, include_metadata = FALSE) {
+#' @family Tableau REST API
+get_server_schedules <- function(tableau, api_version = 3.4, page_size = 100, include_metadata = FALSE) {
+  base_url <- tableau$base_url
+  token <- tableau$token
 
+  url <- paste0(
+    base_url,
+    "api/",
+    api_version,
+    "/schedules?fields=_all_&pageSize=",
+    page_size
+  )
 
-  url <- paste0(base_url,
-                "api/",
-                api_version,
-                "/schedules?fields=_all_&pageSize=",
-                page_size)
-
-  api_response <- httr::GET(url,
-                            httr::add_headers("X-Tableau-Auth" = token))
+  api_response <- httr::GET(
+    url,
+    httr::add_headers("X-Tableau-Auth" = token)
+  )
 
   jsonResponseText <- httr::content(api_response, as = "text")
 
-  df <- as.data.frame(jsonlite::fromJSON(jsonResponseText)) %>%
+  df <- jsonlite::fromJSON(jsonResponseText) %>%
+    as.data.frame() %>%
     dplyr::rename_with(~ stringr::str_remove(., "schedules.schedule."), dplyr::everything())
 
   if (!include_metadata) {
@@ -35,6 +41,3 @@ get_server_schedules <- function(base_url, api_version = 3.4, token, page_size =
 
   return(df)
 }
-
-
-

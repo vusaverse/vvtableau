@@ -29,9 +29,11 @@ library(vvtableau)
 To begin, you need to authenticate and establish a connection to Tableau Server. Use the authenticate_server() function to provide the server URL, your username, and password. Here's an example:
 
 ```{r authenticate}
-authenticate_server(server = "https://tableau.server.com",
-                    username = "your_username",
-                    password = "your_password")
+authenticate_server(
+  server = "https://tableau.server.com",
+  username = "your_username",
+  password = "your_password"
+)
 ```
 
 When authentication has succeeded the following system variables will be set: 
@@ -47,10 +49,12 @@ Once connected, you can retrieve various information about Tableau Server using 
 
 
 ```{r jobs}
-get_server_jobs(base_url = "https://tableau.server.com",
-                            site_id = Sys.getenv("TABLEAU_API_SITE_ID"),
-                            token = Sys.getenv("TABLEAU_API_TOKEN"),
-                            page_size = 300)
+get_server_jobs(
+  base_url = "https://tableau.server.com",
+  site_id = Sys.getenv("TABLEAU_API_SITE_ID"),
+  token = Sys.getenv("TABLEAU_API_TOKEN"),
+  page_size = 300
+)
 ```
 
 

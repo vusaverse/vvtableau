@@ -1,19 +1,26 @@
-#' Download filtered tableau views to png images from dataframe
+#' Download filtered Tableau views to PNG images from a dataframe.
 #'
-#' @param df Dataframe containing filter columns and filter values
-#' @param base_url Tableau server url
-#' @param site_id The site id
-#' @param token API token
-#' @param view_id The id of the view to download
-#' @param path_to_save The directory to write the images to
-#' @return NULL.
-#' @family tableau rest api
+#' Downloads PNG images of filtered Tableau views based on the provided dataframe containing filter columns and filter values.
+#'
+#' @param tableau A list containing the Tableau authentication variables: `base_url`, `token`, `user_id`, and `site_id`.
+#' @param df Dataframe containing filter columns and filter values.
+#' @param view_id The ID of the view to download.
+#' @param path_to_save The directory to write the images to.
+#' @param api_version The API version to use (default: 3.8).
 #'
 #' @export
-download_filtered_tableau_image <- function(df, base_url, site_id, token, view_id, path_to_save) {
+#'
+#' @family Tableau REST API
+download_filtered_tableau_image <- function(tableau, df, view_id, path_to_save, api_version = "3.8") {
+  base_url <- tableau$base_url
+  token <- tableau$token
+  site_id <- tableau$site_id
+
   # Define the base URL
-  base_url <- paste0(base_url, "api/", "3.8", "/sites/",
-                     site_id, "/views/", view_id , "/image")
+  base_url <- paste0(
+    base_url, "api/", api_version, "/sites/",
+    site_id, "/views/", view_id, "/image"
+  )
 
   # Iterate over rows of the dataframe
   purrr::pmap(df, function(...) {
@@ -21,12 +28,14 @@ download_filtered_tableau_image <- function(df, base_url, site_id, token, view_i
     query <- row_to_query(c(...))
     url <- paste0(base_url, query, "&resolution=high")
 
-    # # Download the image
-    httr::GET(url, httr::add_headers(`X-Tableau-Auth` = token),
-        httr::write_disk(paste0(path_to_save, name, ".png"), overwrite = TRUE))
+    # Download the image
+    httr::GET(
+      url, httr::add_headers(`X-Tableau-Auth` = token),
+      httr::write_disk(paste0(path_to_save, name, ".png"), overwrite = TRUE)
+    )
   })
-
 }
+
 
 #' Escape characters for url
 #'
@@ -70,4 +79,3 @@ row_to_name <- function(row) {
 
   return(query)
 }
-

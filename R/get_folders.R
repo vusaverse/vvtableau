@@ -27,4 +27,3 @@ get_folders <- function(wb) {
 
   return(df)
 }
-

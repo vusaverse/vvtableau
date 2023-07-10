@@ -4,28 +4,38 @@
 \alias{download_tableau_data}
 \title{Download Tableau view data as Excel}
 \usage{
-download_tableau_data(
-  base_url,
-  site_id,
-  token,
-  view_id,
-  path_to_save,
-  api_version = 3.8
-)
+download_tableau_data(tableau, view_id, path_to_save, api_version = 3.8)
 }
 \arguments{
-\item{base_url}{Tableau server URL}
+\item{tableau}{A list containing the Tableau authentication variables: `base_url`, `token`, `user_id`, and `site_id`.}
 
-\item{site_id}{The site ID}
+\item{view_id}{The ID of the view to download.}
 
-\item{token}{API token}
+\item{path_to_save}{The directory to write the data Excel file to.}
 
-\item{view_id}{The ID of the view to download}
-
-\item{path_to_save}{The directory to write the data Excel file to}
-
-\item{api_version}{The API version; default set to 3.8}
+\item{api_version}{The API version to use (default: 3.8).}
 }
 \description{
-Download Tableau view data as Excel
+Downloads the data from a Tableau view in Excel format.
 }
+\seealso{
+Other Tableau REST API: 
+\code{\link{authenticate_server}()},
+\code{\link{download_filtered_tableau_image}()},
+\code{\link{download_tableau_crosstab_excel}()},
+\code{\link{download_workbooks_server_pdf}()},
+\code{\link{download_workbooks_server_powerpoint}()},
+\code{\link{download_workbooks_server}()},
+\code{\link{get_server_connected_apps}()},
+\code{\link{get_server_datasources}()},
+\code{\link{get_server_groups}()},
+\code{\link{get_server_info}()},
+\code{\link{get_server_jobs}()},
+\code{\link{get_server_projects}()},
+\code{\link{get_server_refresh_tasks}()},
+\code{\link{get_server_schedules}()},
+\code{\link{get_server_users}()},
+\code{\link{get_server_views}()},
+\code{\link{get_server_workbooks}()}
+}
+\concept{Tableau REST API}
