@@ -1,0 +1,63 @@
+---
+title: "Downloading Filtered Tableau Images with Super Sample Superstore"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Downloading Filtered Tableau Images with Super Sample Superstore}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  eval = FALSE
+)
+```
+
+# Introduction
+
+This vignette demonstrates the usage of the `download_filtered_tableau_image` function in the R package. We'll use the Super Sample Superstore example in Tableau to showcase how to download filtered images by filtering on various combinations of region and category.
+
+```{r setup}
+library(vvtableau)
+
+# Authenticate on the Tableau Server.
+tableau <- authenticate_server(
+  server = "https://tableau.server.com",
+  username = "your_username",
+  password = "your_password"
+)
+
+# Set the view ID for the Super Sample Superstore example view
+view_id <- "super-sample-superstore-view-id"
+
+# Set the path to save the downloaded images
+path_to_save <- "path/to/save/images/"
+```
+
+# Download Filtered Images
+
+Let's download images for different combinations of region and category filters.
+
+```{r config}
+# Create a dataframe with the filter values for each combination
+filter_df <- data.frame(
+  region = c("West", "East", "Central"),
+  category = c("Furniture", "Technology", "Office Supplies")
+)
+
+download_filtered_tableau_image(tableau, filter_df, view_id, path_to_save)
+
+
+```
+
+For this example, the function will iterate over each row of the dataframe and download the filtered images for each combination of region and category. In this case, it will download images for the following combinations:
+
+-   "West" region, "Furniture" category
+
+-   "East" region, "Technology" category
+
+-   "Central" region, "Office Supplies" category
+
+You can customize the `filter_df` dataframe to include more combinations of region and category filters as needed.
