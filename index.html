@@ -32,7 +32,7 @@
     
     <a class="navbar-brand me-2" href="index.html">vvtableau</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +49,9 @@
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="articles/getting_started.html">Getting Started</a>
   </div>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="news/index.html">Changelog</a>
 </li>
       </ul>
 <form class="form-inline my-2 my-lg-0" role="search">
@@ -76,6 +79,12 @@
 <p><a href="https://www.codefactor.io/repository/github/vusaverse/vvtableau" class="external-link"><img src="https://www.codefactor.io/repository/github/vusaverse/vvtableau/badge" alt="CodeFactor"></a> <a href="https://github.com/vusaverse/vvtableau/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/vusaverse/vvtableau/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a> <a href="https://CRAN.R-project.org/package=vvtableau/" class="external-link"><img src="https://www.r-pkg.org/badges/version/vvtableau" alt="CRAN status"></a> <a href="https://cran.r-project.org/package=vvtableau/" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/last-month/vvtableau?color=green/" alt="CRAN last month downloads"></a> <a href="https://cran.r-project.org/package=vvtableau/" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/grand-total/vvtableau?color=green/" alt="CRAN last month downloads"></a></p>
 <p>The <code>vvtableau</code> package is an R interface for interacting with Tableau Server using the Tableau REST API. It provides a convenient way to automate Tableau tasks, such as publishing workbooks, refreshing data extracts, managing users and groups, and retrieving information about server objects directly from R. Additionally, it includes functions to download filtered views, workbooks, and export them to different formats like PDF and PowerPoint.</p>
 <p>Furthermore, methods are included to interact with Tableau desktop. These methods allow you to retrieve information from workbooks and to change them.</p>
+<div class="section level2">
+<h2 id="breaking-changes">Breaking Changes<a class="anchor" aria-label="anchor" href="#breaking-changes"></a>
+</h2>
+<p><strong>Important:</strong> Starting from version 0.2.0, the <code>base_url</code>, <code>site_id</code>, and <code>token</code> arguments in the <code>get_server_workbooks</code> function have been deprecated. Instead, you need to pass a <code>tableau</code> object returned by the <code>authenticate_tableau_server</code> function for authentication.</p>
+<p>Please refer to the documentation for more details on how to migrate your code and update your authentication process using the <code>tableau</code> object.</p>
+</div>
 <div class="section level2">
 <h2 id="features">Features<a class="anchor" aria-label="anchor" href="#features"></a>
 </h2>
