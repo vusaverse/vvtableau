@@ -98,15 +98,13 @@ various operations on Tableau Server.</p>
 Tableau Server. Use the authenticate_server() function to provide the
 server URL, your username, and password. Here’s an example:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/authenticate_server.html">authenticate_server</a></span><span class="op">(</span></span>
+<code class="sourceCode R"><span><span class="va">tableau</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/authenticate_server.html">authenticate_server</a></span><span class="op">(</span></span>
 <span>  server <span class="op">=</span> <span class="st">"https://tableau.server.com"</span>,</span>
 <span>  username <span class="op">=</span> <span class="st">"your_username"</span>,</span>
 <span>  password <span class="op">=</span> <span class="st">"your_password"</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<p>When authentication has succeeded the following system variables will
-be set: - <code>TABLEAU_API_TOKEN</code> -
-<code>TABLEAU_API_USER_ID</code> - <code>TABLEAU_API_SITE_ID</code></p>
-<p>These variables are required in order to use the Server methods.</p>
+<p>When authentication has succeeded the <code>tableau</code> object can
+be passed to the Tableau REST API methods.</p>
 </div>
 <div class="section level2">
 <h2 id="retrieving-server-information">Retrieving Server Information<a class="anchor" aria-label="anchor" href="#retrieving-server-information"></a>
@@ -116,9 +114,7 @@ Server using the provided functions. Here is an example to retrieve the
 jobs on the server:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_server_jobs.html">get_server_jobs</a></span><span class="op">(</span></span>
-<span>  base_url <span class="op">=</span> <span class="st">"https://tableau.server.com"</span>,</span>
-<span>  site_id <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"TABLEAU_API_SITE_ID"</span><span class="op">)</span>,</span>
-<span>  token <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"TABLEAU_API_TOKEN"</span><span class="op">)</span>,</span>
+<span>  <span class="va">tableau</span>,</span>
 <span>  page_size <span class="op">=</span> <span class="fl">300</span></span>
 <span><span class="op">)</span></span></code></pre></div>
 </div>
