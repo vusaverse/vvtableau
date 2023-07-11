@@ -30,7 +30,6 @@ get_variables <- function(wb) {
   result <- XML::xpathApply(proc[[xy]], "//workbook//datasource//column", utilFun)
   nested_xml <- do.call(rbind, result)
 
-
   df <- data.frame(
     var_name,
     nested_xml
