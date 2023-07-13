@@ -1,435 +1,339 @@
 # TODO list for the Tableau REST API methods.
 
-- [ ] Add analytics extension connection to site
-- [ ] Delete analytics extension connection from site
-- [ ] Enable or disable analytics extensions on server
-                                             - Not available for Tableau Cloud
-- [ ] Get analytics extension details
-- [ ] Get current analytics extension for workbook
-- [ ] Get enabled state of analytics extensions on server
-                                             - Not available for Tableau Cloud
-- [ ] Get enabled state of analytics extensions on site
-- [ ] List analytics extension connections of workbook
-- [ ] List analytics extension connections on site
-- [ ] Remove current analytics extension connection for workbook
-- [ ] Update analytics extension connection of site
-- [ ] Update analytics extension for workbook
-- [ ] Update enabled state of analytics extensions on site
-- [ ] Create ask data lens
-- [ ] Delete ask data lens
-- [ ] Get ask data lens
-- [ ] Import ask data lens
-- [ ] List ask data lenses in site
-- [ ] Revoke Administrator Personal Access Tokens
-                                             - Not available for Tableau Cloud.
-- [ ] Sign In
-- [ ] Sign Out
-- [ ] Switch Site
-                                             - Not available for Tableau Cloud.
-- [ ] Create Connected App
-- [ ] Create Connected App Secret
-- [ ] Delete Connected App
-- [ ] Delete Connected App Secret
-- [ ] Delete EAS
-                                             - This method is not available for Tableau Server.
-- [ ] Get Connected App
-- [ ] Get Connected App Secret
-- [ ] List All Registered EAS
-                                             - This method is not available for Tableau Server.
-- [x] List Connected Apps
-- [ ] List Registered EAS
-                                             - This method is not available for Tableau Server.
-- [ ] Register EAS
-                                             - This method is not available for Tableau Server.
-- [ ] Update Connected App
-- [ ] Update EAS
-                                             - This method is not available for Tableau Server.
-- [ ] Get batch content usage statistics
-                                             - Not available for Tableau Server
-- [ ] Get content search results
-- [ ] Get content Suggestions
-- [ ] Get usage statistics for content item
-                                             - Not available for Tableau Server
-- [ ] Allow dashboard extension on site
-- [ ] Block dashboard extension on server
-                                             - Not available for Tableau Cloud
-- [ ] Disallow dashboard extension on site
-- [ ] Get allowed dashboard extension on site
-- [ ] Get blocked dashboard extension on server
-                                             - Not available for Tableau Cloud
-- [ ] List allowed dashboard extensions on site
-- [ ] List blocked dashboard extensions on server
-                                             - Not available for Tableau Cloud
-- [ ] List dashboard extension settings of site
-- [ ] List settings for dashboard extensions on server
-                                             - Not available for Tableau Cloud
-- [ ] Unblock dashboard extension on server
-                                             - Not available for Tableau Cloud
-- [ ] Update dashboard extension settings of site
-- [ ] Update dashboard extensions settings of server
-                                             - Not available for Tableau Cloud
-- [ ] Update settings for allowed dashboard extension on site
-- [ ] Add Tags to Data Source
-- [ ] Delete Data Source
-- [ ] Delete Tag from Data Source
-- [ ] Download Data Source
-- [ ] Download Data Source Revision
-- [ ] Get Data Source Revisions
-- [ ] Publish Data Source
-- [ ] Query Data Source
-- [ ] Query Data Source Connections
-- [x] Query Data Sources
-- [ ] Remove Data Source Revision
-- [ ] Update Data in Hyper Connection
-- [ ] Update Data in Hyper Data Source
-- [ ] Update Data Source
-- [ ] Update Data Source Connection
-- [ ] Update Data Source Now
-- [ ] Create an Extract for a Data Source
-- [ ] Create Cloud extract refresh task
-                                             - Not available for Tableau Server.
-- [ ] Create Extracts for Embedded Data Sources in a Workbook
-- [ ] Decrypt Extracts in a Site
-- [ ] Delete Extract Refresh Task
-- [ ] Delete Extracts of Embedded Data Sources from a Workbook
-- [ ] Delete the Extract from a Data Source
-- [ ] Encrypt Extracts in a Site
-- [ ] Get Extract Refresh Task
-- [ ] List Extract Refresh Tasks in Server Schedule
-                                             - Not available for Tableau Cloud.
-- [x] List Extract Refresh Tasks in Site
-- [ ] Reencrypt Extracts in a Site
-- [ ] Run Extract Refresh Task
-- [ ] Update Cloud extract refresh task
-                                             - Not available for Tableau Server.
-- [ ] Add Data Source to Favorites
-- [ ] Add Flow to Favorites
-- [ ] Add Metric to Favorites
-- [ ] Add Project to Favorites
-- [ ] Add View to Favorites
-- [ ] Add Workbook to Favorites
-- [ ] Delete Data Source from Favorites
-- [ ] Delete Flow from Favorites
-- [ ] Delete Project from Favorites
-- [ ] Delete View from Favorites
-- [ ] Delete Workbook from Favorites
-- [ ] Get Favorites for User
-- [ ] Organize Favorites
-- [ ] Add Flow Permissions
-- [ ] Add Flow Task to Schedule
-- [ ] Cancel Flow Run
-- [ ] Delete Flow
-- [ ] Delete Flow Permission
-- [ ] Download Flow
-- [ ] Get Flow Run
-- [ ] Get Flow Run Task
-- [ ] Get Flow Run Tasks
-- [ ] Get Flow Runs
-- [ ] Get Linked Task
-                                             - Available only with a Data Management license.
-- [ ] Get Linked Tasks
-                                             - Available only with a Data Management license.
-- [ ] Publish Flow
-- [ ] Query Flow
-- [ ] Query Flow Connections
-- [ ] Query Flow Permissions
-- [ ] Query Flows for a Site
-- [ ] Query Flows for User
-- [ ] Run Flow Now
-- [ ] Run Flow Task
-- [ ] Run Linked Task Now
-                                             - Available only with a Data Management license.
-- [ ] Update Flow
-- [ ] Update Flow Connection
-- [ ] Add User to Identity Pool
-                                             - Not available for Tableau Cloud.
-- [ ] Configure Identity Store
-                                             - Not available for Tableau Cloud
-- [ ] Create Authentication Configuration
-                                             - Not available for Tableau Cloud
-- [ ] Create Identity Pool
-                                             - Not available for Tableau Cloud
-- [ ] Delete Authentication Configuration
-                                             - Not available for Tableau Cloud
-- [ ] Delete Identity Pool
-                                             - Not available for Tableau Cloud.
-- [ ] Delete Identity Store
-                                             - Not available for Tableau Cloud
-- [ ] Get Identity Pool
-                                             - Not available for Tableau Cloud
-- [ ] List Authentication Configurations
-                                             - Not available for Tableau Cloud
-- [ ] List Identity Pools
-                                             - Not available for Tableau Cloud
-- [ ] List Identity Stores
-                                             - Not available for Tableau Cloud
-- [ ] Update Authentication Configuration
-                                             - Not available for Tableau Cloud
-- [ ] Update Identity Pool
-                                             - Not available for Tableau Cloud
-- [ ] Add Data Source to Server Schedule
-                                             - Not available for Tableau Cloud.
-- [ ] Add Workbook to Server Schedule
-                                             - Not available for Tableau Cloud.
-- [ ] Cancel Job
-- [ ] Create Server Schedule
-                                             - Not available for Tableau Cloud.
-- [ ] Delete Data Acceleration Task
-- [ ] Delete Server Schedule
-                                             - Not available for Tableau Cloud.
-- [ ] Get Data Acceleration Tasks in a Site
-- [ ] Get Server Schedule
-                                             - Not available for Tableau Cloud.
-- [x] List Server Schedules
-                                             - Not available for Tableau Cloud.
-- [ ] Query Job
-- [x] Query Jobs
-- [ ] Update Server Schedule
-                                             - Not available for Tableau Cloud.
-- [ ] Add (or Update) Quality Warning Trigger
-                                             - Available only with a Data Management license.
-- [ ] Add Data Quality Warning
-                                             - Available only with a Data Management license.
-- [ ] Add Database Permissions
-                                             - Available only with a Data Management license.
-- [ ] Add Default Database Permissions
-                                             - Available only with a Data Management license.
-- [ ] Add Table Permissions
-                                             - Available only with a Data Management license.
-- [ ] Add Tags to Column
-- [ ] Add Tags to Database
-- [ ] Add Tags to Table
-- [ ] Batch Add or Update Data Quality Certifications
-                                             - Available only with a Data Management license.
-- [ ] Batch Add or Update Data Quality Warnings
-                                             - Available only with a Data Management license.
-- [ ] Batch Add Tags
-                                             - Available only with a Data Management license.
-- [ ] Batch Delete Data Quality Warnings
-                                             - Available only with a Data Management license.
-- [ ] Batch Delete Tags
-                                             - Available only with a Data Management license.
-- [ ] Create or Update labelValue
-                                             - Available only with a Data Management license. Not available for Tableau Server.
-- [ ] Delete Data Quality Certification by ID
-                                             - Available only with a Data Management license.
-- [ ] Delete Data Quality Certifications by Content
-                                             - Available only with a Data Management license.
-- [ ] Delete Data Quality Warning by Content
-                                             - Available only with a Data Management license.
-- [ ] Delete Data Quality Warning by ID
-                                             - Available only with a Data Management license.
-- [ ] Delete Database Permissions
-                                             - Available only with a Data Management license.
-- [ ] Delete Default Database Permissions
-                                             - Available only with a Data Management license.
-- [ ] Delete Label
-                                             - Available only with a Data Management license.
-- [ ] Delete Labels
-                                             - Available only with a Data Management license.
-- [ ] Delete labelValue
-                                             - Available only with a Data Management license. Not available for Tableau Server.
-- [ ] Delete Quality Warning Trigger by ID
-                                             - Available only with a Data Management license.
-- [ ] Delete Quality Warning Triggers by Content
-                                             - Available only with a Data Management license.
-- [ ] Delete Table Permissions
-                                             - Available only with a Data Management license.
-- [ ] Delete Tag from Column
-- [ ] Delete Tag from Database
-- [ ] Delete Tag from Table
-- [ ] Get Databases and Tables from Connection
-- [ ] Get Label
-                                             - Available only with a Data Management license.
-- [ ] Get Labels
-                                             - Available only with a Data Management license.
-- [ ] Get labelValue
-                                             - Available only with a Data Management license. Not available for Tableau Server.
-- [ ] List labelValues on Site
-                                             - Available only with a Data Management license. Not available for Tableau Server.
-- [ ] Move Database
-                                             - Available only with a Data Management license.
-- [ ] Move Table
-                                             - Available only with a Data Management license.
-- [ ] Query All Quality Warning Triggers by Content
-- [ ] Query Column in a Table
-- [ ] Query Columns in a Table
-- [ ] Query Data Quality Certification by ID
-- [ ] Query Data Quality Certifications by Content
-- [ ] Query Data Quality Warning by Content
-                                             - Available only with a Data Management license.
-- [ ] Query Data Quality Warning by ID
-- [ ] Query Database
-- [ ] Query Database Permissions
-- [ ] Query Databases
-- [ ] Query Default Database Permissions
-- [ ] Query Quality Warning Trigger
-- [ ] Query Table
-- [ ] Query Table Permissions
-- [ ] Query Tables
-- [ ] Remove Column
-                                             - Available only with a Data Management license.
-- [ ] Remove Database
-                                             - Available only with a Data Management license.
-- [ ] Remove Table
-                                             - Available only with a Data Management license.
-- [ ] Update Column
-                                             - Available only with a Data Management license.
-- [ ] Update Data Quality Warning
-                                             - Available only with a Data Management license.
-- [ ] Update Database
-                                             - Available only with a Data Management license.
-- [ ] Update Label
-                                             - Available only with a Data Management license.
-- [ ] Update Labels
-                                             - Available only with a Data Management license.
-- [ ] Update labelValue
-                                             - Available only with a Data Management license. Not available for Tableau Server.
-- [ ] Update Quality Warning Trigger
-                                             - Available only with a Data Management license.
-- [ ] Update Table
-                                             - Available only with a Data Management license.
-- [ ] Delete Metric
-- [ ] Get Metric
-- [ ] Get Metric Data
-- [ ] List Metrics for Site
-- [ ] Update Metric
-- [ ] Get Mobile Security Settings for Server
-- [ ] Get Mobile Security Settings for Site
-- [ ] Update Mobile Security Settings for Site
-- [ ] Add User to Data-Driven Alert
-- [ ] Create a Webhook
-- [ ] Create Data Driven Alert
-                                             - Not available for Tableau Server.
-- [ ] Delete a Webhook
-- [ ] Delete Data-Driven Alert
-- [ ] Delete User from Data-Driven Alert
-- [ ] Get a Webhook
-- [ ] Get Data-Driven Alert
-- [ ] Get User Notification Preferences
-- [ ] List Data-Driven Alerts on Site
-- [ ] List Webhooks
-- [ ] Test a Webhook
-- [ ] Update a Webhook
-- [ ] Update Data-Driven Alert
-- [ ] Update User Notification Preferences
-- [ ] Add Ask Data Lens Permissions
-- [ ] Add Data Source Permissions
-- [ ] Add Default Permissions
-- [ ] Add Project Permissions
-- [ ] Add View Permissions
-- [ ] Add Workbook Permissions
-- [ ] Add Workbook to Server Schedule
-                                             - Not available for Tableau Cloud.
-- [ ] Delete Ask Data Lens Permission
-- [ ] Delete Data Source Permission
-- [ ] Delete Default Permission
-- [ ] Delete Project Permission
-- [ ] Delete View Permission
-- [ ] Delete Workbook Permission
-- [ ] List Ask Data Lens Permissions
-- [ ] Query Data Source Permissions
-- [ ] Query Default Permissions
-- [ ] Query Project Permissions
-- [ ] Query View Permissions
-- [ ] Query Workbook Permissions
-- [ ] Create Project
-- [ ] Delete Project
-- [x] Query Projects
-- [ ] Update Project
-- [ ] Append to File Upload
-- [ ] Initiate File Upload
-- [ ] Publish Data Source
-- [ ] Publish Flow
-- [ ] Publish Workbook
-- [ ] Download Data Source Revision
-- [ ] Download Workbook Revision
-                                             - Available only if version history is enabled for the specified site.
-- [ ] Get Data Source Revisions
-- [ ] Get Workbook Revisions
-- [ ] Remove Data Source Revision
-- [ ] Remove Workbook Revision
-- [ ] Delete Server Session
-- [ ] Get Current Server Session
-- [ ] List Server Active Directory Domains
-                                             - Not available for Tableau Cloud.
-- [ ] Server Info
-- [ ] Update Server Active Directory Domain
-                                             - Not available for Tableau Cloud.
-- [ ] Create Site
-                                             - Not available for Tableau Cloud.
-- [ ] Delete Site
-                                             - Not available for Tableau Cloud.
-- [ ] Get Data Acceleration Report for a Site
-- [ ] Get Embedding Settings for a Site
-- [ ] Get Recently Viewed for Site
-- [ ] Query Site
-- [ ] Query Sites
-                                             - Not available for Tableau Cloud.
-- [ ] Query Views for Site
-- [ ] Update Embedding Settings for Site
-- [ ] Update Site
-- [ ] Create Subscription
-- [ ] Delete Subscription
-- [ ] Get Subscription
-- [ ] List Subscriptions
-- [ ] Update Subscription
-- [ ] Add User to Group
-- [ ] Add User to Site
-- [ ] Create Group
-- [ ] Delete Group
-- [ ] Delete Users from Site with CSV
-- [ ] Get Groups for a User
-- [ ] Get Users in Group
-- [x] Get Users on Site
-- [ ] Import Users to Site from CSV
-- [x] Query Groups
-- [ ] Query User On Site
-- [ ] Remove User from Group
-- [ ] Remove User from Site
-- [ ] Update Group
-- [ ] Update User
-- [ ] List Virtual Connection Database Connections
-                                             - Available only with a Data Management license.
-- [ ] List Virtual Connections
-                                             - Available only with a Data Management license.
-- [ ] Update Virtual Connection Database Connections
-                                             - Available only with a Data Management license.
-- [ ] Add Tags to View
-- [ ] Add Tags to Workbook
-- [ ] Delete Custom View
-- [ ] Delete Tag from View
-- [ ] Delete Tag from Workbook
-- [ ] Delete Workbook
-- [x] Download View Crosstab Excel
-- [x] Download Workbook
-- [x] Download Workbook PDF
-- [x] Download Workbook PowerPoint
-- [ ] Download Workbook Revision
-                                             - Available only if version history is enabled for the specified site.
-- [ ] Get Custom View
-- [ ] Get Custom View Image
-- [ ] Get Recommendations for Views
-- [ ] Get View
-- [ ] Get View by Path
-- [ ] Get Workbook
-- [ ] Get Workbook Downgrade Info
-- [ ] Get Workbook Revisions
-- [ ] Hide a Recommendation for a View
-- [ ] List Custom Views
-- [ ] Publish Workbook
-- [ ] Query View Data
-- [ ] Query View Image
-- [ ] Query View PDF
-- [ ] Query View Preview Image
-- [x] Query Views for Site
-- [ ] Query Views for Workbook
-- [ ] Query Workbook Connections
-- [ ] Query Workbook Preview Image
-- [x] Query Workbooks for Site
-- [ ] Query Workbooks for User
-- [ ] Unhide a Recommendation for a View
-- [ ] Update Custom View
-- [ ] Update Workbook
-- [ ] Update Workbook Connection
-- [ ] Update Workbook Now
+-   [ ] Add analytics extension connection to site
+-   [ ] Delete analytics extension connection from site
+-   [ ] Enable or disable analytics extensions on server - Not available for Tableau Cloud
+-   [ ] Get analytics extension details
+-   [ ] Get current analytics extension for workbook
+-   [ ] Get enabled state of analytics extensions on server - Not available for Tableau Cloud
+-   [ ] Get enabled state of analytics extensions on site
+-   [ ] List analytics extension connections of workbook
+-   [ ] List analytics extension connections on site
+-   [ ] Remove current analytics extension connection for workbook
+-   [ ] Update analytics extension connection of site
+-   [ ] Update analytics extension for workbook
+-   [ ] Update enabled state of analytics extensions on site
+-   [ ] Create ask data lens
+-   [ ] Delete ask data lens
+-   [ ] Get ask data lens
+-   [ ] Import ask data lens
+-   [ ] List ask data lenses in site
+-   [ ] Revoke Administrator Personal Access Tokens - Not available for Tableau Cloud.
+-   [ ] Sign In
+-   [ ] Sign Out
+-   [ ] Switch Site - Not available for Tableau Cloud.
+-   [ ] Create Connected App
+-   [ ] Create Connected App Secret
+-   [ ] Delete Connected App
+-   [ ] Delete Connected App Secret
+-   [ ] Delete EAS - This method is not available for Tableau Server.
+-   [ ] Get Connected App
+-   [ ] Get Connected App Secret
+-   [ ] List All Registered EAS - This method is not available for Tableau Server.
+-   [x] List Connected Apps
+-   [ ] List Registered EAS - This method is not available for Tableau Server.
+-   [ ] Register EAS - This method is not available for Tableau Server.
+-   [ ] Update Connected App
+-   [ ] Update EAS - This method is not available for Tableau Server.
+-   [ ] Get batch content usage statistics - Not available for Tableau Server
+-   [ ] Get content search results
+-   [ ] Get content Suggestions
+-   [ ] Get usage statistics for content item - Not available for Tableau Server
+-   [ ] Allow dashboard extension on site
+-   [ ] Block dashboard extension on server - Not available for Tableau Cloud
+-   [ ] Disallow dashboard extension on site
+-   [ ] Get allowed dashboard extension on site
+-   [ ] Get blocked dashboard extension on server - Not available for Tableau Cloud
+-   [ ] List allowed dashboard extensions on site
+-   [ ] List blocked dashboard extensions on server - Not available for Tableau Cloud
+-   [ ] List dashboard extension settings of site
+-   [ ] List settings for dashboard extensions on server - Not available for Tableau Cloud
+-   [ ] Unblock dashboard extension on server - Not available for Tableau Cloud
+-   [ ] Update dashboard extension settings of site
+-   [ ] Update dashboard extensions settings of server - Not available for Tableau Cloud
+-   [ ] Update settings for allowed dashboard extension on site
+-   [ ] Add Tags to Data Source
+-   [ ] Delete Data Source
+-   [ ] Delete Tag from Data Source
+-   [ ] Download Data Source
+-   [ ] Download Data Source Revision
+-   [ ] Get Data Source Revisions
+-   [ ] Publish Data Source
+-   [ ] Query Data Source
+-   [ ] Query Data Source Connections
+-   [x] Query Data Sources
+-   [ ] Remove Data Source Revision
+-   [ ] Update Data in Hyper Connection
+-   [ ] Update Data in Hyper Data Source
+-   [ ] Update Data Source
+-   [ ] Update Data Source Connection
+-   [ ] Update Data Source Now
+-   [ ] Create an Extract for a Data Source
+-   [ ] Create Cloud extract refresh task - Not available for Tableau Server.
+-   [ ] Create Extracts for Embedded Data Sources in a Workbook
+-   [ ] Decrypt Extracts in a Site
+-   [ ] Delete Extract Refresh Task
+-   [ ] Delete Extracts of Embedded Data Sources from a Workbook
+-   [ ] Delete the Extract from a Data Source
+-   [ ] Encrypt Extracts in a Site
+-   [ ] Get Extract Refresh Task
+-   [ ] List Extract Refresh Tasks in Server Schedule - Not available for Tableau Cloud.
+-   [x] List Extract Refresh Tasks in Site
+-   [ ] Reencrypt Extracts in a Site
+-   [ ] Run Extract Refresh Task
+-   [ ] Update Cloud extract refresh task - Not available for Tableau Server.
+-   [ ] Add Data Source to Favorites
+-   [ ] Add Flow to Favorites
+-   [ ] Add Metric to Favorites
+-   [ ] Add Project to Favorites
+-   [ ] Add View to Favorites
+-   [ ] Add Workbook to Favorites
+-   [ ] Delete Data Source from Favorites
+-   [ ] Delete Flow from Favorites
+-   [ ] Delete Project from Favorites
+-   [ ] Delete View from Favorites
+-   [ ] Delete Workbook from Favorites
+-   [x] Get Favorites for User
+-   [ ] Organize Favorites
+-   [ ] Add Flow Permissions
+-   [ ] Add Flow Task to Schedule
+-   [ ] Cancel Flow Run
+-   [ ] Delete Flow
+-   [ ] Delete Flow Permission
+-   [ ] Download Flow
+-   [ ] Get Flow Run
+-   [ ] Get Flow Run Task
+-   [ ] Get Flow Run Tasks
+-   [ ] Get Flow Runs
+-   [ ] Get Linked Task - Available only with a Data Management license.
+-   [ ] Get Linked Tasks - Available only with a Data Management license.
+-   [ ] Publish Flow
+-   [ ] Query Flow
+-   [ ] Query Flow Connections
+-   [ ] Query Flow Permissions
+-   [ ] Query Flows for a Site
+-   [ ] Query Flows for User
+-   [ ] Run Flow Now
+-   [ ] Run Flow Task
+-   [ ] Run Linked Task Now - Available only with a Data Management license.
+-   [ ] Update Flow
+-   [ ] Update Flow Connection
+-   [ ] Add User to Identity Pool - Not available for Tableau Cloud.
+-   [ ] Configure Identity Store - Not available for Tableau Cloud
+-   [ ] Create Authentication Configuration - Not available for Tableau Cloud
+-   [ ] Create Identity Pool - Not available for Tableau Cloud
+-   [ ] Delete Authentication Configuration - Not available for Tableau Cloud
+-   [ ] Delete Identity Pool - Not available for Tableau Cloud.
+-   [ ] Delete Identity Store - Not available for Tableau Cloud
+-   [ ] Get Identity Pool - Not available for Tableau Cloud
+-   [ ] List Authentication Configurations - Not available for Tableau Cloud
+-   [ ] List Identity Pools - Not available for Tableau Cloud
+-   [ ] List Identity Stores - Not available for Tableau Cloud
+-   [ ] Update Authentication Configuration - Not available for Tableau Cloud
+-   [ ] Update Identity Pool - Not available for Tableau Cloud
+-   [ ] Add Data Source to Server Schedule - Not available for Tableau Cloud.
+-   [ ] Add Workbook to Server Schedule - Not available for Tableau Cloud.
+-   [ ] Cancel Job
+-   [ ] Create Server Schedule - Not available for Tableau Cloud.
+-   [ ] Delete Data Acceleration Task
+-   [ ] Delete Server Schedule - Not available for Tableau Cloud.
+-   [ ] Get Data Acceleration Tasks in a Site
+-   [ ] Get Server Schedule - Not available for Tableau Cloud.
+-   [x] List Server Schedules - Not available for Tableau Cloud.
+-   [ ] Query Job
+-   [x] Query Jobs
+-   [ ] Update Server Schedule - Not available for Tableau Cloud.
+-   [ ] Add (or Update) Quality Warning Trigger - Available only with a Data Management license.
+-   [ ] Add Data Quality Warning - Available only with a Data Management license.
+-   [ ] Add Database Permissions - Available only with a Data Management license.
+-   [ ] Add Default Database Permissions - Available only with a Data Management license.
+-   [ ] Add Table Permissions - Available only with a Data Management license.
+-   [ ] Add Tags to Column
+-   [ ] Add Tags to Database
+-   [ ] Add Tags to Table
+-   [ ] Batch Add or Update Data Quality Certifications - Available only with a Data Management license.
+-   [ ] Batch Add or Update Data Quality Warnings - Available only with a Data Management license.
+-   [ ] Batch Add Tags - Available only with a Data Management license.
+-   [ ] Batch Delete Data Quality Warnings - Available only with a Data Management license.
+-   [ ] Batch Delete Tags - Available only with a Data Management license.
+-   [ ] Create or Update labelValue - Available only with a Data Management license. Not available for Tableau Server.
+-   [ ] Delete Data Quality Certification by ID - Available only with a Data Management license.
+-   [ ] Delete Data Quality Certifications by Content - Available only with a Data Management license.
+-   [ ] Delete Data Quality Warning by Content - Available only with a Data Management license.
+-   [ ] Delete Data Quality Warning by ID - Available only with a Data Management license.
+-   [ ] Delete Database Permissions - Available only with a Data Management license.
+-   [ ] Delete Default Database Permissions - Available only with a Data Management license.
+-   [ ] Delete Label - Available only with a Data Management license.
+-   [ ] Delete Labels - Available only with a Data Management license.
+-   [ ] Delete labelValue - Available only with a Data Management license. Not available for Tableau Server.
+-   [ ] Delete Quality Warning Trigger by ID - Available only with a Data Management license.
+-   [ ] Delete Quality Warning Triggers by Content - Available only with a Data Management license.
+-   [ ] Delete Table Permissions - Available only with a Data Management license.
+-   [ ] Delete Tag from Column
+-   [ ] Delete Tag from Database
+-   [ ] Delete Tag from Table
+-   [ ] Get Databases and Tables from Connection
+-   [ ] Get Label - Available only with a Data Management license.
+-   [ ] Get Labels - Available only with a Data Management license.
+-   [ ] Get labelValue - Available only with a Data Management license. Not available for Tableau Server.
+-   [ ] List labelValues on Site - Available only with a Data Management license. Not available for Tableau Server.
+-   [ ] Move Database - Available only with a Data Management license.
+-   [ ] Move Table - Available only with a Data Management license.
+-   [ ] Query All Quality Warning Triggers by Content
+-   [ ] Query Column in a Table
+-   [ ] Query Columns in a Table
+-   [ ] Query Data Quality Certification by ID
+-   [ ] Query Data Quality Certifications by Content
+-   [ ] Query Data Quality Warning by Content - Available only with a Data Management license.
+-   [ ] Query Data Quality Warning by ID
+-   [ ] Query Database
+-   [ ] Query Database Permissions
+-   [ ] Query Databases
+-   [ ] Query Default Database Permissions
+-   [ ] Query Quality Warning Trigger
+-   [ ] Query Table
+-   [ ] Query Table Permissions
+-   [ ] Query Tables
+-   [ ] Remove Column - Available only with a Data Management license.
+-   [ ] Remove Database - Available only with a Data Management license.
+-   [ ] Remove Table - Available only with a Data Management license.
+-   [ ] Update Column - Available only with a Data Management license.
+-   [ ] Update Data Quality Warning - Available only with a Data Management license.
+-   [ ] Update Database - Available only with a Data Management license.
+-   [ ] Update Label - Available only with a Data Management license.
+-   [ ] Update Labels - Available only with a Data Management license.
+-   [ ] Update labelValue - Available only with a Data Management license. Not available for Tableau Server.
+-   [ ] Update Quality Warning Trigger - Available only with a Data Management license.
+-   [ ] Update Table - Available only with a Data Management license.
+-   [ ] Delete Metric
+-   [ ] Get Metric
+-   [ ] Get Metric Data
+-   [ ] List Metrics for Site
+-   [ ] Update Metric
+-   [ ] Get Mobile Security Settings for Server
+-   [ ] Get Mobile Security Settings for Site
+-   [ ] Update Mobile Security Settings for Site
+-   [ ] Add User to Data-Driven Alert
+-   [ ] Create a Webhook
+-   [ ] Create Data Driven Alert - Not available for Tableau Server.
+-   [ ] Delete a Webhook
+-   [ ] Delete Data-Driven Alert
+-   [ ] Delete User from Data-Driven Alert
+-   [ ] Get a Webhook
+-   [ ] Get Data-Driven Alert
+-   [ ] Get User Notification Preferences
+-   [ ] List Data-Driven Alerts on Site
+-   [ ] List Webhooks
+-   [ ] Test a Webhook
+-   [ ] Update a Webhook
+-   [ ] Update Data-Driven Alert
+-   [ ] Update User Notification Preferences
+-   [ ] Add Ask Data Lens Permissions
+-   [ ] Add Data Source Permissions
+-   [ ] Add Default Permissions
+-   [ ] Add Project Permissions
+-   [ ] Add View Permissions
+-   [ ] Add Workbook Permissions
+-   [ ] Add Workbook to Server Schedule - Not available for Tableau Cloud.
+-   [ ] Delete Ask Data Lens Permission
+-   [ ] Delete Data Source Permission
+-   [ ] Delete Default Permission
+-   [ ] Delete Project Permission
+-   [ ] Delete View Permission
+-   [ ] Delete Workbook Permission
+-   [ ] List Ask Data Lens Permissions
+-   [ ] Query Data Source Permissions
+-   [ ] Query Default Permissions
+-   [ ] Query Project Permissions
+-   [ ] Query View Permissions
+-   [ ] Query Workbook Permissions
+-   [ ] Create Project
+-   [ ] Delete Project
+-   [x] Query Projects
+-   [ ] Update Project
+-   [ ] Append to File Upload
+-   [ ] Initiate File Upload
+-   [ ] Publish Data Source
+-   [ ] Publish Flow
+-   [ ] Publish Workbook
+-   [ ] Download Data Source Revision
+-   [ ] Download Workbook Revision - Available only if version history is enabled for the specified site.
+-   [ ] Get Data Source Revisions
+-   [ ] Get Workbook Revisions
+-   [ ] Remove Data Source Revision
+-   [ ] Remove Workbook Revision
+-   [ ] Delete Server Session
+-   [ ] Get Current Server Session
+-   [ ] List Server Active Directory Domains - Not available for Tableau Cloud.
+-   [ ] Server Info
+-   [ ] Update Server Active Directory Domain - Not available for Tableau Cloud.
+-   [ ] Create Site - Not available for Tableau Cloud.
+-   [ ] Delete Site - Not available for Tableau Cloud.
+-   [ ] Get Data Acceleration Report for a Site
+-   [ ] Get Embedding Settings for a Site
+-   [ ] Get Recently Viewed for Site
+-   [ ] Query Site
+-   [ ] Query Sites - Not available for Tableau Cloud.
+-   [ ] Query Views for Site
+-   [ ] Update Embedding Settings for Site
+-   [ ] Update Site
+-   [ ] Create Subscription
+-   [ ] Delete Subscription
+-   [ ] Get Subscription
+-   [ ] List Subscriptions
+-   [ ] Update Subscription
+-   [ ] Add User to Group
+-   [ ] Add User to Site
+-   [ ] Create Group
+-   [ ] Delete Group
+-   [ ] Delete Users from Site with CSV
+-   [ ] Get Groups for a User
+-   [ ] Get Users in Group
+-   [x] Get Users on Site
+-   [ ] Import Users to Site from CSV
+-   [x] Query Groups
+-   [ ] Query User On Site
+-   [ ] Remove User from Group
+-   [ ] Remove User from Site
+-   [ ] Update Group
+-   [ ] Update User
+-   [ ] List Virtual Connection Database Connections - Available only with a Data Management license.
+-   [ ] List Virtual Connections - Available only with a Data Management license.
+-   [ ] Update Virtual Connection Database Connections - Available only with a Data Management license.
+-   [ ] Add Tags to View
+-   [ ] Add Tags to Workbook
+-   [ ] Delete Custom View
+-   [ ] Delete Tag from View
+-   [ ] Delete Tag from Workbook
+-   [ ] Delete Workbook
+-   [x] Download View Crosstab Excel
+-   [x] Download Workbook
+-   [x] Download Workbook PDF
+-   [x] Download Workbook PowerPoint
+-   [ ] Download Workbook Revision - Available only if version history is enabled for the specified site.
+-   [ ] Get Custom View
+-   [ ] Get Custom View Image
+-   [ ] Get Recommendations for Views
+-   [ ] Get View
+-   [ ] Get View by Path
+-   [ ] Get Workbook
+-   [ ] Get Workbook Downgrade Info
+-   [ ] Get Workbook Revisions
+-   [ ] Hide a Recommendation for a View
+-   [ ] List Custom Views
+-   [ ] Publish Workbook
+-   [ ] Query View Data
+-   [ ] Query View Image
+-   [ ] Query View PDF
+-   [ ] Query View Preview Image
+-   [x] Query Views for Site
+-   [ ] Query Views for Workbook
+-   [ ] Query Workbook Connections
+-   [ ] Query Workbook Preview Image
+-   [x] Query Workbooks for Site
+-   [ ] Query Workbooks for User
+-   [ ] Unhide a Recommendation for a View
+-   [ ] Update Custom View
+-   [ ] Update Workbook
+-   [ ] Update Workbook Connection
+-   [ ] Update Workbook Now
