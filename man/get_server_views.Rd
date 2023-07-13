@@ -46,6 +46,7 @@ Other Tableau REST API:
 \code{\link{get_server_projects}()},
 \code{\link{get_server_refresh_tasks}()},
 \code{\link{get_server_schedules}()},
+\code{\link{get_server_user_favorites}()},
 \code{\link{get_server_users}()},
 \code{\link{get_server_workbooks}()}
 }
