@@ -3,6 +3,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/vusaverse/vvtableau/badge)](https://www.codefactor.io/repository/github/vusaverse/vvtableau)
 [![R-CMD-check](https://github.com/vusaverse/vvtableau/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/vusaverse/vvtableau/actions/workflows/R-CMD-check.yaml)
 [![CRAN status](https://www.r-pkg.org/badges/version/vvtableau)](https://CRAN.R-project.org/package=vvtableau/)
+<a href="https://diffify.com/R/vvtableau" target="_blank"><img src="https://diffify.com/diffify-badge.svg" alt="The diffify page for the R package vvtableau" style="width: 100px; max-width: 100%;"></a>
 [![CRAN last month downloads](https://cranlogs.r-pkg.org/badges/last-month/vvtableau?color=green/)](https://cran.r-project.org/package=vvtableau/)
 [![CRAN last month downloads](https://cranlogs.r-pkg.org/badges/grand-total/vvtableau?color=green/)](https://cran.r-project.org/package=vvtableau/)
 
@@ -13,7 +14,7 @@ Furthermore, methods are included to interact with Tableau desktop. These method
 
 ## Breaking Changes
 
-**Important:** Starting from version 0.2.0, the `base_url`, `site_id`, and `token` arguments in the `get_server_workbooks` function have been deprecated. Instead, you need to pass a `tableau` object returned by the `authenticate_tableau_server` function for authentication.
+**Important:** Starting from version 0.2.0, the `base_url`, `site_id`, and `token` arguments in server methods have been deprecated. Instead, you need to pass a `tableau` object returned by the `authenticate_tableau_server` function for authentication.
 
 Please refer to the documentation for more details on how to migrate your code and update your authentication process using the `tableau` object.
 
