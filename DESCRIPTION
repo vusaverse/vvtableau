@@ -3,6 +3,19 @@ Type: Package
 Title: R Interface for 'Tableau' Services
 Version: 0.2.0
 Authors@R: 
+  c(person(given = "Tomer", 
+           family = "Iwan", 
+           role = c("aut", "cre"), 
+           email = "t.iwan@vu.nl"
+           ),
+    person(given = "Ruben",
+           family = "Korvinus",
+           role = "ctb"
+           ),
+    person(given = "VU Analytics",
+           role = "cph"
+           ))
+Authors@R: 
     person("Tomer", "Iwan", , "t.iwan@vu.nl", role = c("aut", "cre", "cph"))
 Description: Provides an R interface for interacting with the 'Tableau' Server.
     It allows users to perform various operations such as publishing workbooks, refreshing data extracts, 
