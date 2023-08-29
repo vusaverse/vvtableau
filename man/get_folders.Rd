@@ -17,6 +17,8 @@ Get folder structure workbook
 }
 \seealso{
 Other xml: 
+\code{\link{adjust_tableau_size}()},
+\code{\link{check_dashboard_names}()},
 \code{\link{get_actions}()},
 \code{\link{get_hierarchy}()},
 \code{\link{get_nodenames}()},
