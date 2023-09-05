@@ -31,7 +31,16 @@
     <loc>https://vusaverse.github.io/vvtableau/news/index.html</loc>
   </url>
   <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/adjust_tableau_font_style.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/adjust_tableau_size.html</loc>
+  </url>
+  <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/authenticate_server.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/check_dashboard_names.html</loc>
   </url>
   <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/download_filtered_tableau_image.html</loc>
