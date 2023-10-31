@@ -1,3 +1,6 @@
+# vvtableau 0.3.0
+* Added a function to authenticate to Tableau Server and Tableau Cloud using personal access token.
+
 # vvtableau 0.2.0
 
 ## Breaking Changes in Version  0.2.0
