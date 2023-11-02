@@ -23,6 +23,8 @@ Authenticates the user on the Tableau server and retrieves the necessary authent
 }
 \seealso{
 Other Tableau REST API: 
+\code{\link{add_tags_to_view}()},
+\code{\link{add_tags_to_workbook}()},
 \code{\link{download_filtered_tableau_image}()},
 \code{\link{download_tableau_crosstab_excel}()},
 \code{\link{download_tableau_data}()},
@@ -40,6 +42,7 @@ Other Tableau REST API:
 \code{\link{get_server_user_favorites}()},
 \code{\link{get_server_users}()},
 \code{\link{get_server_views}()},
-\code{\link{get_server_workbooks}()}
+\code{\link{get_server_workbooks}()},
+\code{\link{get_table_assets}()}
 }
 \concept{Tableau REST API}

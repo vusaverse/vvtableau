@@ -20,6 +20,8 @@ Downloads the data from a Tableau view in Excel format.
 }
 \seealso{
 Other Tableau REST API: 
+\code{\link{add_tags_to_view}()},
+\code{\link{add_tags_to_workbook}()},
 \code{\link{authenticate_server}()},
 \code{\link{download_filtered_tableau_image}()},
 \code{\link{download_tableau_crosstab_excel}()},
@@ -37,6 +39,7 @@ Other Tableau REST API:
 \code{\link{get_server_user_favorites}()},
 \code{\link{get_server_users}()},
 \code{\link{get_server_views}()},
-\code{\link{get_server_workbooks}()}
+\code{\link{get_server_workbooks}()},
+\code{\link{get_table_assets}()}
 }
 \concept{Tableau REST API}

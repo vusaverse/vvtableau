@@ -19,7 +19,7 @@
 -   [ ] Import ask data lens
 -   [ ] List ask data lenses in site
 -   [ ] Revoke Administrator Personal Access Tokens - Not available for Tableau Cloud.
--   [ ] Sign In
+-   [x] Sign In
 -   [ ] Sign Out
 -   [ ] Switch Site - Not available for Tableau Cloud.
 -   [ ] Create Connected App
@@ -193,7 +193,7 @@
 -   [ ] Query Quality Warning Trigger
 -   [ ] Query Table
 -   [ ] Query Table Permissions
--   [ ] Query Tables
+-   [x] Query Tables
 -   [ ] Remove Column - Available only with a Data Management license.
 -   [ ] Remove Database - Available only with a Data Management license.
 -   [ ] Remove Table - Available only with a Data Management license.
@@ -300,8 +300,8 @@
 -   [ ] List Virtual Connection Database Connections - Available only with a Data Management license.
 -   [ ] List Virtual Connections - Available only with a Data Management license.
 -   [ ] Update Virtual Connection Database Connections - Available only with a Data Management license.
--   [ ] Add Tags to View
--   [ ] Add Tags to Workbook
+-   [x] Add Tags to View
+-   [x] Add Tags to Workbook
 -   [ ] Delete Custom View
 -   [ ] Delete Tag from View
 -   [ ] Delete Tag from Workbook

@@ -28,6 +28,8 @@ Downloads PNG images of filtered Tableau views based on the provided dataframe c
 }
 \seealso{
 Other Tableau REST API: 
+\code{\link{add_tags_to_view}()},
+\code{\link{add_tags_to_workbook}()},
 \code{\link{authenticate_server}()},
 \code{\link{download_tableau_crosstab_excel}()},
 \code{\link{download_tableau_data}()},
@@ -45,6 +47,7 @@ Other Tableau REST API:
 \code{\link{get_server_user_favorites}()},
 \code{\link{get_server_users}()},
 \code{\link{get_server_views}()},
-\code{\link{get_server_workbooks}()}
+\code{\link{get_server_workbooks}()},
+\code{\link{get_table_assets}()}
 }
 \concept{Tableau REST API}
