@@ -31,6 +31,12 @@
     <loc>https://vusaverse.github.io/vvtableau/news/index.html</loc>
   </url>
   <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/add_tags_to_view.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/add_tags_to_workbook.html</loc>
+  </url>
+  <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/adjust_tableau_font_style.html</loc>
   </url>
   <url>
@@ -122,6 +128,9 @@
   </url>
   <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/get_server_workbooks.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/get_table_assets.html</loc>
   </url>
   <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/get_tableau_data_source.html</loc>
