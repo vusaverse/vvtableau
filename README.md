@@ -12,13 +12,6 @@ The `vvtableau` package is an R interface for interacting with Tableau Server us
 Furthermore, methods are included to interact with Tableau desktop. These methods allow you to retrieve information from workbooks and to change them.
 
 
-## Breaking Changes
-
-**Important:** Starting from version 0.2.0, the `base_url`, `site_id`, and `token` arguments in server methods have been deprecated. Instead, you need to pass a `tableau` object returned by the `authenticate_tableau_server` function for authentication.
-
-Please refer to the documentation for more details on how to migrate your code and update your authentication process using the `tableau` object.
-
-
 ## Features
 - Authenticate and establish a connection to Tableau Server.
 - Check the existence of specific dashboard names.
