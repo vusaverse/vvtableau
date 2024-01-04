@@ -39,6 +39,7 @@ Other Tableau REST API:
 \code{\link{download_workbooks_server_pdf}()},
 \code{\link{download_workbooks_server_powerpoint}()},
 \code{\link{download_workbooks_server}()},
+\code{\link{get_groups_for_user}()},
 \code{\link{get_server_connected_apps}()},
 \code{\link{get_server_datasources}()},
 \code{\link{get_server_groups}()},

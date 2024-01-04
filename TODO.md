@@ -287,7 +287,7 @@
 -   [ ] Create Group
 -   [ ] Delete Group
 -   [ ] Delete Users from Site with CSV
--   [ ] Get Groups for a User
+-   [x] Get Groups for a User
 -   [x] Get Users in Group
 -   [x] Get Users on Site
 -   [ ] Import Users to Site from CSV
