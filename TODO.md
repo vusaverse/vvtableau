@@ -283,7 +283,7 @@
 -   [ ] List Subscriptions
 -   [ ] Update Subscription
 -   [ ] Add User to Group
--   [ ] Add User to Site
+-   [x] Add User to Site
 -   [ ] Create Group
 -   [ ] Delete Group
 -   [ ] Delete Users from Site with CSV
@@ -294,7 +294,7 @@
 -   [x] Query Groups
 -   [ ] Query User On Site
 -   [ ] Remove User from Group
--   [ ] Remove User from Site
+-   [x] Remove User from Site
 -   [ ] Update Group
 -   [ ] Update User
 -   [ ] List Virtual Connection Database Connections - Available only with a Data Management license.

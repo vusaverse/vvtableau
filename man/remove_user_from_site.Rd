@@ -45,6 +45,7 @@ Other Tableau REST API:
 \code{\link{get_server_users}()},
 \code{\link{get_server_views}()},
 \code{\link{get_server_workbooks}()},
-\code{\link{get_table_assets}()}
+\code{\link{get_table_assets}()},
+\code{\link{get_users_in_group}()}
 }
 \concept{Tableau REST API}
