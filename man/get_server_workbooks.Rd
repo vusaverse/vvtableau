@@ -48,6 +48,7 @@ Other Tableau REST API:
 \code{\link{get_server_user_favorites}()},
 \code{\link{get_server_users}()},
 \code{\link{get_server_views}()},
-\code{\link{get_table_assets}()}
+\code{\link{get_table_assets}()},
+\code{\link{remove_user_from_site}()}
 }
 \concept{Tableau REST API}
