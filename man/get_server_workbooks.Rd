@@ -52,6 +52,7 @@ Other Tableau REST API:
 \code{\link{get_server_views}()},
 \code{\link{get_table_assets}()},
 \code{\link{get_users_in_group}()},
+\code{\link{remove_user_from_group}()},
 \code{\link{remove_user_from_site}()}
 }
 \concept{Tableau REST API}
