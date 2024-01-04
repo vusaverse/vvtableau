@@ -24,6 +24,7 @@ Adds one or more tags to the specified workbook in the Tableau Server using the 
 \seealso{
 Other Tableau REST API: 
 \code{\link{add_tags_to_view}()},
+\code{\link{add_user_to_site}()},
 \code{\link{authenticate_server}()},
 \code{\link{download_filtered_tableau_image}()},
 \code{\link{download_tableau_crosstab_excel}()},

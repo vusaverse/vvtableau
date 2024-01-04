@@ -21,6 +21,7 @@ Retrieves information about all table assets for a site from the Tableau Server 
 Other Tableau REST API: 
 \code{\link{add_tags_to_view}()},
 \code{\link{add_tags_to_workbook}()},
+\code{\link{add_user_to_site}()},
 \code{\link{authenticate_server}()},
 \code{\link{download_filtered_tableau_image}()},
 \code{\link{download_tableau_crosstab_excel}()},

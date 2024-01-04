@@ -3,6 +3,7 @@
 export("%>%")
 export(add_tags_to_view)
 export(add_tags_to_workbook)
+export(add_user_to_site)
 export(adjust_tableau_font_style)
 export(adjust_tableau_size)
 export(authenticate_server)

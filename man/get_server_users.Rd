@@ -30,6 +30,7 @@ Retrieves a list of users from the Tableau server using the provided authenticat
 Other Tableau REST API: 
 \code{\link{add_tags_to_view}()},
 \code{\link{add_tags_to_workbook}()},
+\code{\link{add_user_to_site}()},
 \code{\link{authenticate_server}()},
 \code{\link{download_filtered_tableau_image}()},
 \code{\link{download_tableau_crosstab_excel}()},
