@@ -30,6 +30,7 @@ Downloads PNG images of filtered Tableau views based on the provided dataframe c
 Other Tableau REST API: 
 \code{\link{add_tags_to_view}()},
 \code{\link{add_tags_to_workbook}()},
+\code{\link{add_user_to_group}()},
 \code{\link{add_user_to_site}()},
 \code{\link{authenticate_server}()},
 \code{\link{download_tableau_crosstab_excel}()},

@@ -33,6 +33,7 @@ Adds a user to Tableau Server or Tableau and assigns the user to the specified s
 Other Tableau REST API: 
 \code{\link{add_tags_to_view}()},
 \code{\link{add_tags_to_workbook}()},
+\code{\link{add_user_to_group}()},
 \code{\link{authenticate_server}()},
 \code{\link{download_filtered_tableau_image}()},
 \code{\link{download_tableau_crosstab_excel}()},

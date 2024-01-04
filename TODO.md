@@ -282,13 +282,13 @@
 -   [ ] Get Subscription
 -   [ ] List Subscriptions
 -   [ ] Update Subscription
--   [ ] Add User to Group
+-   [x] Add User to Group
 -   [x] Add User to Site
 -   [ ] Create Group
 -   [ ] Delete Group
 -   [ ] Delete Users from Site with CSV
 -   [ ] Get Groups for a User
--   [ ] Get Users in Group
+-   [x] Get Users in Group
 -   [x] Get Users on Site
 -   [ ] Import Users to Site from CSV
 -   [x] Query Groups
