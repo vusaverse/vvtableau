@@ -81,12 +81,6 @@
 <p>The <code>vvtableau</code> package is an R interface for interacting with Tableau Server using the Tableau REST API. It provides a convenient way to automate Tableau tasks, such as publishing workbooks, refreshing data extracts, managing users and groups, and retrieving information about server objects directly from R. Additionally, it includes functions to download filtered views, workbooks, and export them to different formats like PDF and PowerPoint.</p>
 <p>Furthermore, methods are included to interact with Tableau desktop. These methods allow you to retrieve information from workbooks and to change them.</p>
 <div class="section level2">
-<h2 id="breaking-changes">Breaking Changes<a class="anchor" aria-label="anchor" href="#breaking-changes"></a>
-</h2>
-<p><strong>Important:</strong> Starting from version 0.2.0, the <code>base_url</code>, <code>site_id</code>, and <code>token</code> arguments in server methods have been deprecated. Instead, you need to pass a <code>tableau</code> object returned by the <code>authenticate_tableau_server</code> function for authentication.</p>
-<p>Please refer to the documentation for more details on how to migrate your code and update your authentication process using the <code>tableau</code> object.</p>
-</div>
-<div class="section level2">
 <h2 id="features">Features<a class="anchor" aria-label="anchor" href="#features"></a>
 </h2>
 <ul>
