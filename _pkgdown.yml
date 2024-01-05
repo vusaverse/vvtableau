@@ -39,7 +39,6 @@ reference:
     contents:
       - download_tableau_data
       - get_server_datasources
-      - get_tableau_data_source
 #
   - title: Extract and Encryption Methods
     desc: Extract and encryption methods for Tableau REST API.
@@ -194,6 +193,7 @@ reference:
       - get_parameter
       - get_revision
       - get_server_location
+      - get_tableau_data_source
       - get_variable_folders
       - get_variables
       - get_workbook_id
