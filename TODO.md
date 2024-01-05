@@ -284,8 +284,8 @@
 -   [ ] Update Subscription
 -   [x] Add User to Group
 -   [x] Add User to Site
--   [ ] Create Group
--   [ ] Delete Group
+-   [x] Create Group
+-   [x] Delete Group
 -   [ ] Delete Users from Site with CSV
 -   [x] Get Groups for a User
 -   [x] Get Users in Group

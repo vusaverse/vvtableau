@@ -35,6 +35,7 @@ Other Tableau REST API:
 \code{\link{add_tags_to_workbook}()},
 \code{\link{add_user_to_group}()},
 \code{\link{authenticate_server}()},
+\code{\link{create_group}()},
 \code{\link{download_filtered_tableau_image}()},
 \code{\link{download_tableau_crosstab_excel}()},
 \code{\link{download_tableau_data}()},
