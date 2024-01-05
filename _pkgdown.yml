@@ -2,3 +2,201 @@ url: https://vusaverse.github.io/vvtableau/
 template:
   bootstrap: 5
 
+reference:
+  # - title: Analytics Extensions Settings Methods
+  #   desc: Analytics Extensions Settings methods for Tableau REST API.
+  #   contents:
+  #     - None
+  #
+  # - title: Ask Data Lens Methods - Retired in API 3.22
+  #   desc: Ask Data Lens Settings methods for Tableau REST API.
+  #   contents:
+  #     - None
+  #
+  - title: Authentication Methods
+    desc: Authentication methods for Tableau REST API.
+    contents:
+      - authenticate_PAT
+      - authenticate_server
+#
+  - title: Connected App Methods
+    desc: Connected app methods for Tableau REST API.
+    contents:
+      - get_server_connected_apps
+#
+#   - title: Content Exploration Methods
+#     desc: Content exploration methods for Tableau REST API.
+#     contents:
+#       - None
+#
+#   - title: Dashboard Extensions Settings Methods - Retired in API 3.21
+#     desc: Dashboard Extensions methods for Tableau REST API.
+#     contents:
+#       - None
+#
+  - title: Data Sources Methods
+    desc: Data sources methods for Tableau REST API.
+    contents:
+      - download_tableau_data
+      - get_server_datasources
+      - get_tableau_data_source
+#
+  - title: Extract and Encryption Methods
+    desc: Extract and encryption methods for Tableau REST API.
+    contents:
+      - get_server_refresh_tasks
+#
+  - title: Favorites Methods
+    desc: Favorites methods for Tableau REST API.
+    contents:
+      - get_server_user_favorites
+#
+#   - title: Flow Methods
+#     desc: Flow methods for Tableau REST API.
+#     contents:
+#       - None
+#
+#   - title: Identity Pools Methods
+#     desc: Identity pools methods for Tableau REST API.
+#     contents:
+#       - None
+#
+  - title: Jobs, Tasks, and Schedules Methods
+    desc: Jobs, tasks, and schedules methods for Tableau REST API.
+    contents:
+      - get_server_jobs
+      - get_server_schedules
+
+#
+  - title: Metadata Methods
+    desc: Metadata methods for Tableau REST API.
+    contents:
+      - get_table_assets
+#
+#   - title: Metrics Methods - Retired in API 3.22
+#     desc: Metrics settings methods for Tableau REST API.
+#     contents:
+#       - None
+#
+#   - title: Mobile Settings Methods
+#     desc: Mobile settings methods for Tableau REST API.
+#     contents:
+#       - None
+#
+#   - title: Notifications Methods
+#     desc: Notifications methods for Tableau REST API.
+#     contents:
+#       - None
+#
+#   - title: Permissions Methods
+#     desc: Permissions methods for Tableau REST API.
+#     contents:
+#       - None
+#
+  - title: Projects Methods
+    desc: Projects methods for Tableau REST API.
+    contents:
+      - get_server_projects
+#
+#   - title: Publishing Methods
+#     desc: Publishing methods for Tableau REST API.
+#     contents:
+#       - None
+#
+#   - title: Pulse Methods
+#     desc: Pulse methods for Tableau REST API.
+#     contents:
+#       - None
+#
+#   - title: Revisions Methods
+#     desc: Revisions methods for Tableau REST API.
+#     contents:
+#       - None
+#
+  - title: Server Methods
+    desc: Server methods for Tableau REST API.
+    contents:
+      - get_server_info
+
+  # - title: Site Methods
+  #   desc: Site methods for Tableau REST API.
+  #   contents:
+  #     - groups_get_user_groups
+  #     - groups_add_user_to_group
+  #     - groups_remove_user_from_group
+  #     - groups_get_groups_for_user
+  #     - groups_create_group
+  #     - groups_delete_group
+  #     - users_query_user_on_site
+#
+#   - title: Subscriptions Methods
+#     desc: Subscriptions methods for Tableau REST API.
+#     contents:
+#       - None
+#
+#   - title: Tableau Extensions Settings Methods
+#     desc: Tableau extensions settings methods for Tableau REST API.
+#     contents:
+#       - None
+#
+  - title: Users and Groups Methods
+    desc: Users and groups methods for Tableau REST API.
+    contents:
+      - add_user_to_group
+      - add_user_to_site
+      - create_group
+      - delete_group
+      - get_groups_for_user
+      - get_server_groups
+      - get_server_users
+      - get_users_in_group
+      - query_user_on_site
+      - remove_user_from_group
+      - remove_user_from_site
+#
+#   - title: Virtual Connections Methods
+#     desc: Virtual Connections methods for Tableau REST API.
+#     contents:
+#       - None
+#
+#
+  - title: Workbooks and Views Methods
+    desc: Workbooks and Views Methods methods for Tableau REST API.
+    contents:
+      - add_tags_to_view
+      - add_tags_to_workbook
+      - download_filtered_tableau_image
+      - download_tableau_crosstab_excel
+      - download_workbooks_server
+      - download_workbooks_server_pdf
+      - download_workbooks_server_powerpoint
+      - get_server_views
+      - get_server_workbooks
+
+  - title: Helperfunctions
+    desc: Underlying helperfunctions for Tableau REST API.
+    contents:
+      - escape_special_chars
+      - row_to_name
+      - row_to_query
+
+  - title: Local workbook methods
+    desc: Functions that edit local Tableau Workbooks using XML structure.
+    contents:
+      - adjust_tableau_font_style
+      - adjust_tableau_size
+      - check_dashboard_names
+      - get_actions
+      - get_folders
+      - get_hierarchy
+      - get_nodenames
+      - get_parameter
+      - get_parameter
+      - get_revision
+      - get_server_location
+      - get_variable_folders
+      - get_variables
+      - get_workbook_id
+      - get_workbook_tabs
+      - make_rootnodes
+
