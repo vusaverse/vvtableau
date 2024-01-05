@@ -13,14 +13,9 @@ Furthermore, methods are included to interact with Tableau desktop. These method
 
 
 ## Features
-- Authenticate and establish a connection to Tableau Server.
-- Check the existence of specific dashboard names.
-- Download filtered views from Tableau Server.
-- Download workbooks from Tableau Server in various formats (PDF, PowerPoint).
-- Retrieve information about actions, folders, hierarchies, parameters, revisions, server applications, datasources, groups, locations, projects, refresh tasks, schedules, users, views, and workbooks.
-- Retrieve Tableau data source information.
-- Manage variables and variable folders.
-- Retrieve workbook IDs and tabs.
+To see which functions are available in which section based on the Tableau REST API, helper functions, and functions that work with local Tableau workbooks using XML structure, please refer to the reference page of the vvtableau package. The [reference](https://vusaverse.github.io/vvtableau/reference/index.html) page provides a comprehensive list of functions available in the package, organized by category.
+
+Additionally, the package includes vignettes that provide more detailed information on how to use the functions in the package.
 
 ## Installation
 
