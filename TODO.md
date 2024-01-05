@@ -292,7 +292,7 @@
 -   [x] Get Users on Site
 -   [ ] Import Users to Site from CSV
 -   [x] Query Groups
--   [ ] Query User On Site
+-   [x] Query User On Site
 -   [x] Remove User from Group
 -   [x] Remove User from Site
 -   [ ] Update Group
