@@ -3,6 +3,7 @@
 ^LICENSE\.md$
 ^build_vvCommander.R
 ^\.github$
+^helperfunctions$
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
