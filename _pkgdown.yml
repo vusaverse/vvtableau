@@ -7,49 +7,49 @@ reference:
   #   desc: Analytics Extensions Settings methods for Tableau REST API.
   #   contents:
   #     - None
-  #
+
   # - title: Ask Data Lens Methods - Retired in API 3.22
   #   desc: Ask Data Lens Settings methods for Tableau REST API.
   #   contents:
   #     - None
-  #
+
   - title: Authentication Methods
     desc: Authentication methods for Tableau REST API.
     contents:
       - authenticate_PAT
       - authenticate_server
-#
+
   - title: Connected App Methods
     desc: Connected app methods for Tableau REST API.
     contents:
       - get_server_connected_apps
-#
+
 #   - title: Content Exploration Methods
 #     desc: Content exploration methods for Tableau REST API.
 #     contents:
 #       - None
-#
+
 #   - title: Dashboard Extensions Settings Methods - Retired in API 3.21
 #     desc: Dashboard Extensions methods for Tableau REST API.
 #     contents:
 #       - None
-#
+
   - title: Data Sources Methods
     desc: Data sources methods for Tableau REST API.
     contents:
       - download_tableau_data
       - get_server_datasources
-#
+
   - title: Extract and Encryption Methods
     desc: Extract and encryption methods for Tableau REST API.
     contents:
       - get_server_refresh_tasks
-#
+
   - title: Favorites Methods
     desc: Favorites methods for Tableau REST API.
     contents:
       - get_server_user_favorites
-#
+
 #   - title: Flow Methods
 #     desc: Flow methods for Tableau REST API.
 #     contents:
@@ -59,14 +59,14 @@ reference:
 #     desc: Identity pools methods for Tableau REST API.
 #     contents:
 #       - None
-#
+
   - title: Jobs, Tasks, and Schedules Methods
     desc: Jobs, tasks, and schedules methods for Tableau REST API.
     contents:
       - get_server_jobs
       - get_server_schedules
 
-#
+
   - title: Metadata Methods
     desc: Metadata methods for Tableau REST API.
     contents:
@@ -76,27 +76,27 @@ reference:
 #     desc: Metrics settings methods for Tableau REST API.
 #     contents:
 #       - None
-#
+
 #   - title: Mobile Settings Methods
 #     desc: Mobile settings methods for Tableau REST API.
 #     contents:
 #       - None
-#
+
 #   - title: Notifications Methods
 #     desc: Notifications methods for Tableau REST API.
 #     contents:
 #       - None
-#
+
 #   - title: Permissions Methods
 #     desc: Permissions methods for Tableau REST API.
 #     contents:
 #       - None
-#
+
   - title: Projects Methods
     desc: Projects methods for Tableau REST API.
     contents:
       - get_server_projects
-#
+
 #   - title: Publishing Methods
 #     desc: Publishing methods for Tableau REST API.
 #     contents:
@@ -111,7 +111,7 @@ reference:
 #     desc: Revisions methods for Tableau REST API.
 #     contents:
 #       - None
-#
+
   - title: Server Methods
     desc: Server methods for Tableau REST API.
     contents:
@@ -137,7 +137,7 @@ reference:
 #     desc: Tableau extensions settings methods for Tableau REST API.
 #     contents:
 #       - None
-#
+
   - title: Users and Groups Methods
     desc: Users and groups methods for Tableau REST API.
     contents:
@@ -152,13 +152,14 @@ reference:
       - query_user_on_site
       - remove_user_from_group
       - remove_user_from_site
+      - update_group
+      - update_user
 #
 #   - title: Virtual Connections Methods
 #     desc: Virtual Connections methods for Tableau REST API.
 #     contents:
 #       - None
-#
-#
+
   - title: Workbooks and Views Methods
     desc: Workbooks and Views Methods methods for Tableau REST API.
     contents:

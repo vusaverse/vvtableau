@@ -295,8 +295,8 @@
 -   [x] Query User On Site
 -   [x] Remove User from Group
 -   [x] Remove User from Site
--   [ ] Update Group
--   [ ] Update User
+-   [x] Update Group
+-   [x] Update User
 -   [ ] List Virtual Connection Database Connections - Available only with a Data Management license.
 -   [ ] List Virtual Connections - Available only with a Data Management license.
 -   [ ] Update Virtual Connection Database Connections - Available only with a Data Management license.

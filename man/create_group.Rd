@@ -49,6 +49,8 @@ Other Tableau REST API:
 \code{\link{get_users_in_group}()},
 \code{\link{query_user_on_site}()},
 \code{\link{remove_user_from_group}()},
-\code{\link{remove_user_from_site}()}
+\code{\link{remove_user_from_site}()},
+\code{\link{update_group}()},
+\code{\link{update_user}()}
 }
 \concept{Tableau REST API}
