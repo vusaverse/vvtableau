@@ -32,7 +32,7 @@
     
     <a class="navbar-brand me-2" href="index.html">vvtableau</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,10 +81,24 @@
 <p>The <code>vvtableau</code> package is an R interface for interacting with Tableau Server using the Tableau REST API. It provides a convenient way to automate Tableau tasks, such as publishing workbooks, refreshing data extracts, managing users and groups, and retrieving information about server objects directly from R. Additionally, it includes functions to download filtered views, workbooks, and export them to different formats like PDF and PowerPoint.</p>
 <p>Furthermore, methods are included to interact with Tableau desktop. These methods allow you to retrieve information from workbooks and to change them.</p>
 <div class="section level2">
+<h2 id="breaking-changes">Breaking Changes<a class="anchor" aria-label="anchor" href="#breaking-changes"></a>
+</h2>
+<p><strong>Important:</strong> Starting from version 0.2.0, the <code>base_url</code>, <code>site_id</code>, and <code>token</code> arguments in server methods have been deprecated. Instead, you need to pass a <code>tableau</code> object returned by the <code>authenticate_tableau_server</code> function for authentication.</p>
+<p>Please refer to the documentation for more details on how to migrate your code and update your authentication process using the <code>tableau</code> object.</p>
+</div>
+<div class="section level2">
 <h2 id="features">Features<a class="anchor" aria-label="anchor" href="#features"></a>
 </h2>
-<p>To see which functions are available in which section based on the Tableau REST API, helper functions, and functions that work with local Tableau workbooks using XML structure, please refer to the reference page of the vvtableau package. The <a href="https://vusaverse.github.io/vvtableau/reference/index.html">reference</a> page provides a comprehensive list of functions available in the package, organized by category.</p>
-<p>Additionally, the package includes vignettes that provide more detailed information on how to use the functions in the package.</p>
+<ul>
+<li>Authenticate and establish a connection to Tableau Server.</li>
+<li>Check the existence of specific dashboard names.</li>
+<li>Download filtered views from Tableau Server.</li>
+<li>Download workbooks from Tableau Server in various formats (PDF, PowerPoint).</li>
+<li>Retrieve information about actions, folders, hierarchies, parameters, revisions, server applications, datasources, groups, locations, projects, refresh tasks, schedules, users, views, and workbooks.</li>
+<li>Retrieve Tableau data source information.</li>
+<li>Manage variables and variable folders.</li>
+<li>Retrieve workbook IDs and tabs.</li>
+</ul>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
