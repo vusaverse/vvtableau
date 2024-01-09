@@ -1,3 +1,7 @@
+# vvtableau 0.4.0
+* Added Users and Groups Tableau REST Api methods.
+* Organized the reference page on package website.
+
 # vvtableau 0.3.0
 * Added a function to authenticate to Tableau Server and Tableau Cloud using personal access token.
 
