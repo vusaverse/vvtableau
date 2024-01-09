@@ -31,6 +31,18 @@
     <loc>https://vusaverse.github.io/vvtableau/news/index.html</loc>
   </url>
   <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/add_tags_to_view.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/add_tags_to_workbook.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/add_user_to_group.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/add_user_to_site.html</loc>
+  </url>
+  <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/adjust_tableau_font_style.html</loc>
   </url>
   <url>
@@ -44,6 +56,12 @@
   </url>
   <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/check_dashboard_names.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/create_group.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/delete_group.html</loc>
   </url>
   <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/download_filtered_tableau_image.html</loc>
@@ -71,6 +89,9 @@
   </url>
   <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/get_folders.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/get_groups_for_user.html</loc>
   </url>
   <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/get_hierarchy.html</loc>
@@ -124,7 +145,13 @@
     <loc>https://vusaverse.github.io/vvtableau/reference/get_server_workbooks.html</loc>
   </url>
   <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/get_table_assets.html</loc>
+  </url>
+  <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/get_tableau_data_source.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/get_users_in_group.html</loc>
   </url>
   <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/get_variable_folders.html</loc>
@@ -148,9 +175,24 @@
     <loc>https://vusaverse.github.io/vvtableau/reference/pipe.html</loc>
   </url>
   <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/query_user_on_site.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/remove_user_from_group.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/remove_user_from_site.html</loc>
+  </url>
+  <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/row_to_name.html</loc>
   </url>
   <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/row_to_query.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/update_group.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/update_user.html</loc>
   </url>
 </urlset>
