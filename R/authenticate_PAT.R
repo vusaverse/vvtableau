@@ -8,6 +8,8 @@
 #' @param base_url The base URL of the Tableau server or Tableau cloud. For Tableau Server, this is usually the URL of the Tableau server. For Tableau Cloud, this is usually the URL of the Tableau cloud, and it must contain the pod name, such as 10az, 10ay, or us-east-1. For example, the base URL to sign in to a site in the 10ay pod would be: https://10ay.online.tableau.com.
 #' @param api_version the api version to use. Default is 3.4
 #' @return A list containing the base URL, the access token, the site ID, and the user ID.
+#' @export
+#' @family Tableau REST API
 authenticate_PAT <- function(pat_name, pat_secret, content_url, base_url, api_version = 3.4) {
   constructXML <- function(pat_name, pat_secret, content_url) {
     credentials <- paste0(

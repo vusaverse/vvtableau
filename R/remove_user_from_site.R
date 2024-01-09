@@ -8,6 +8,7 @@
 #' @param mapAssetsTo Optional. The ID of a user that receives ownership of contents of the user being removed.
 #'
 #' @return No return value.
+#' @export
 #'
 #' @family Tableau REST API
 remove_user_from_site <- function(tableau, api_version = 3.19, user_id, mapAssetsTo = NULL) {

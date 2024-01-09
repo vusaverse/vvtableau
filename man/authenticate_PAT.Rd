@@ -29,3 +29,40 @@ A list containing the base URL, the access token, the site ID, and the user ID.
 \description{
 This function authenticates to a Tableau Server or Tableau Cloud using a personal access token (PAT).
 }
+\seealso{
+Other Tableau REST API: 
+\code{\link{add_tags_to_view}()},
+\code{\link{add_tags_to_workbook}()},
+\code{\link{add_user_to_group}()},
+\code{\link{add_user_to_site}()},
+\code{\link{authenticate_server}()},
+\code{\link{create_group}()},
+\code{\link{delete_group}()},
+\code{\link{download_filtered_tableau_image}()},
+\code{\link{download_tableau_crosstab_excel}()},
+\code{\link{download_tableau_data}()},
+\code{\link{download_workbooks_server_pdf}()},
+\code{\link{download_workbooks_server_powerpoint}()},
+\code{\link{download_workbooks_server}()},
+\code{\link{get_groups_for_user}()},
+\code{\link{get_server_connected_apps}()},
+\code{\link{get_server_datasources}()},
+\code{\link{get_server_groups}()},
+\code{\link{get_server_info}()},
+\code{\link{get_server_jobs}()},
+\code{\link{get_server_projects}()},
+\code{\link{get_server_refresh_tasks}()},
+\code{\link{get_server_schedules}()},
+\code{\link{get_server_user_favorites}()},
+\code{\link{get_server_users}()},
+\code{\link{get_server_views}()},
+\code{\link{get_server_workbooks}()},
+\code{\link{get_table_assets}()},
+\code{\link{get_users_in_group}()},
+\code{\link{query_user_on_site}()},
+\code{\link{remove_user_from_group}()},
+\code{\link{remove_user_from_site}()},
+\code{\link{update_group}()},
+\code{\link{update_user}()}
+}
+\concept{Tableau REST API}

@@ -5,6 +5,8 @@
 #' @param tableau A list containing the Tableau authentication variables: `base_url`, `token`, `user_id`, and `site_id`.
 #' @param group_id The ID of the group to delete.
 #' @param api_version The API version to use (default: 3.19).
+#' @export
+#' @family Tableau REST API
 delete_group <- function(tableau, group_id, api_version = 3.19) {
   base_url <- tableau$base_url
   site_id <- tableau$site_id

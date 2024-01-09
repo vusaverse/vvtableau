@@ -9,6 +9,7 @@
 #' @param page_number The offset for paging. The default is 1.
 #'
 #' @return A list of users in the specified group.
+#' @export
 #'
 #' @family Tableau REST API
 get_users_in_group <- function(tableau, api_version = 3.19, group_id, page_size = 100, page_number = 1) {
