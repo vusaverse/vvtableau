@@ -4,7 +4,7 @@
 \alias{query_user_on_site}
 \title{Query User On Site}
 \usage{
-query_user_on_site(tableau, user_id, api_version = "3.19")
+query_user_on_site(tableau, user_id, api_version = 3.19)
 }
 \arguments{
 \item{tableau}{A list containing the Tableau authentication variables: `base_url`, `token`, and `site_id`.}

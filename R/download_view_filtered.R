@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @family Tableau REST API
-download_filtered_tableau_image <- function(tableau, df, view_id, path_to_save, api_version = "3.8") {
+download_filtered_tableau_image <- function(tableau, df, view_id, path_to_save, api_version = 3.8) {
   base_url <- tableau$base_url
   token <- tableau$token
   site_id <- tableau$site_id

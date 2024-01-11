@@ -9,7 +9,7 @@
 #' @return Information about the specified user.
 #' @export
 #' @family Tableau REST API
-query_user_on_site <- function(tableau, user_id, api_version = "3.19") {
+query_user_on_site <- function(tableau, user_id, api_version = 3.19) {
   base_url <- tableau$base_url
   token <- tableau$token
   site_id <- tableau$site_id

@@ -7,6 +7,7 @@
 get_server_groups(
   tableau,
   api_version = 3.4,
+  page_number = 1,
   page_size = 100,
   include_metadata = FALSE
 )
@@ -15,6 +16,8 @@ get_server_groups(
 \item{tableau}{A list containing the Tableau authentication variables: `base_url`, `token`, `user_id`, and `site_id`.}
 
 \item{api_version}{The API version to use (default: 3.4).}
+
+\item{page_number}{The page number of the results to retrieve (default: 1).}
 
 \item{page_size}{The number of records to retrieve per page (default: 100).}
 

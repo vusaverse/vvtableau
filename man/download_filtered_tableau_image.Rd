@@ -9,7 +9,7 @@ download_filtered_tableau_image(
   df,
   view_id,
   path_to_save,
-  api_version = "3.8"
+  api_version = 3.8
 )
 }
 \arguments{

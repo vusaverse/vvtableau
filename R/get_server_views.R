@@ -4,6 +4,7 @@
 #'
 #' @param tableau A list containing the Tableau authentication variables: `base_url`, `token`, `user_id`, and `site_id`.
 #' @param api_version The API version to use (default: 3.4).
+#' @param page_number The page number of the results to retrieve (default: 1).
 #' @param page_size The number of views to retrieve per page (default: 100).
 #' @param include_statistics Logical indicating whether to include usage statistics in the result (default: TRUE).
 #' @param include_metadata Logical indicating whether to include metadata columns in the result (default: FALSE).
@@ -12,7 +13,7 @@
 #' @export
 #'
 #' @family Tableau REST API
-get_server_views <- function(tableau, api_version = "3.4", page_size = 100, include_statistics = TRUE, include_metadata = FALSE) {
+get_server_views <- function(tableau, api_version = 3.4, page_number = 1, page_size = 100, include_statistics = TRUE, include_metadata = FALSE) {
   base_url <- tableau$base_url
   token <- tableau$token
   site_id <- tableau$site_id
@@ -26,7 +27,9 @@ get_server_views <- function(tableau, api_version = "3.4", page_size = 100, incl
     "/views?fields=_all_&includeUsageStatistics=",
     include_statistics,
     "&pageSize=",
-    page_size
+    page_size,
+    "&pageNumber=",
+    page_number
   )
 
   api_response <- httr::GET(
