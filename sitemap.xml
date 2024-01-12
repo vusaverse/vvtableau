@@ -64,6 +64,9 @@
     <loc>https://vusaverse.github.io/vvtableau/reference/delete_group.html</loc>
   </url>
   <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/download_datasource.html</loc>
+  </url>
+  <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/download_filtered_tableau_image.html</loc>
   </url>
   <url>
@@ -95,6 +98,9 @@
   </url>
   <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/get_hierarchy.html</loc>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/vvtableau/reference/get_mobile_security_settings.html</loc>
   </url>
   <url>
     <loc>https://vusaverse.github.io/vvtableau/reference/get_nodenames.html</loc>
