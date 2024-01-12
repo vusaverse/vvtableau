@@ -58,21 +58,26 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">authenticate_server</span><span class="op">(</span><span class="va">username</span>, <span class="va">password</span>, <span class="va">base_url</span>, api_version <span class="op">=</span> <span class="fl">3.4</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">authenticate_server</span><span class="op">(</span></span>
+<span>  username <span class="op">=</span> <span class="fu"><a href="tableau_username.html">tableau_username</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>  password <span class="op">=</span> <span class="fu"><a href="tableau_password.html">tableau_password</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>  base_url <span class="op">=</span> <span class="fu"><a href="tableau_base_url.html">tableau_base_url</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>  api_version <span class="op">=</span> <span class="fl">3.4</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>username</dt>
-<dd><p>The username on the Tableau server.</p></dd>
+<dd><p>The username on the Tableau server. Defaults to the `TABLEAU_USERNAME` environment variable.</p></dd>
 
 
 <dt>password</dt>
-<dd><p>The password on the Tableau server.</p></dd>
+<dd><p>The password on the Tableau server. Defaults to the `TABLEAU_PASSWORD` environment variable.</p></dd>
 
 
 <dt>base_url</dt>
-<dd><p>The base URL of the Tableau server.</p></dd>
+<dd><p>The base URL of the Tableau server. Defaults to the `TABLEAU_BASE_URL` environment variable.</p></dd>
 
 
 <dt>api_version</dt>
