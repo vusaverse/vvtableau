@@ -179,6 +179,12 @@ reference:
       - escape_special_chars
       - row_to_name
       - row_to_query
+      - tableau_base_url
+      - tableau_content_url
+      - tableau_password
+      - tableau_pat_name
+      - tableau_pat_secret
+      - tableau_username
 
   - title: Local workbook methods
     desc: Functions that edit local Tableau Workbooks using XML structure.

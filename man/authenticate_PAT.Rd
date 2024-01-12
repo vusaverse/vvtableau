@@ -5,23 +5,23 @@
 \title{Authenticate to Tableau Server or Tableau Cloud}
 \usage{
 authenticate_PAT(
-  pat_name,
-  pat_secret,
-  content_url,
-  base_url,
+  pat_name = tableau_pat_name(),
+  pat_secret = tableau_pat_secret(),
+  content_url = tableau_content_url(),
+  base_url = tableau_base_url(),
   api_version = 3.4
 )
 }
 \arguments{
-\item{pat_name}{The name of the personal access token (PAT).}
+\item{pat_name}{The name of the personal access token (PAT). Defaults to the `TABLEAU_PAT_NAME` environment variable.}
 
-\item{pat_secret}{The secret of the personal access token (PAT).}
+\item{pat_secret}{The secret of the personal access token (PAT). Defaults to the `TABLEAU_PAT_SECRET` environment variable.}
 
-\item{content_url}{The URL of the content to authenticate. For Tableau Server, this is typically the URL of the Tableau server followed by the site ID. For Tableau Cloud, this is usually the URL of the Tableau cloud workbook.}
+\item{content_url}{The URL of the content to authenticate. Defaults to the `TABLEAU_CONTENT_URL` environment variable.}
 
-\item{base_url}{The base URL of the Tableau server or Tableau cloud. For Tableau Server, this is usually the URL of the Tableau server. For Tableau Cloud, this is usually the URL of the Tableau cloud, and it must contain the pod name, such as 10az, 10ay, or us-east-1. For example, the base URL to sign in to a site in the 10ay pod would be: https://10ay.online.tableau.com.}
+\item{base_url}{The base URL of the Tableau server or Tableau cloud. Defaults to the `TABLEAU_BASE_URL` environment variable.}
 
-\item{api_version}{the api version to use. Default is 3.4}
+\item{api_version}{The API version to use. Default is 3.4.}
 }
 \value{
 A list containing the base URL, the access token, the site ID, and the user ID.

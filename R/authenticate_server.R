@@ -2,16 +2,16 @@
 #'
 #' Authenticates the user on the Tableau server and retrieves the necessary authentication variables for running other Tableau REST API methods.
 #'
-#' @param username The username on the Tableau server.
-#' @param password The password on the Tableau server.
-#' @param base_url The base URL of the Tableau server.
+#' @param username The username on the Tableau server. Defaults to the `TABLEAU_USERNAME` environment variable.
+#' @param password The password on the Tableau server. Defaults to the `TABLEAU_PASSWORD` environment variable.
+#' @param base_url The base URL of the Tableau server. Defaults to the `TABLEAU_BASE_URL` environment variable.
 #' @param api_version The API version to use (default: 3.4).
 #'
 #' @return A list containing the authentication variables: base_url, token, site_id, and user_id.
 #' @export
 #'
 #' @family Tableau REST API
-authenticate_server <- function(username, password, base_url, api_version = 3.4) {
+authenticate_server <- function(username = tableau_username(), password = tableau_password(), base_url = tableau_base_url(), api_version = 3.4) {
   tableau <- list(base_url = base_url)
 
   # Check if the base URL ends with a trailing slash and remove it if present
@@ -68,4 +68,37 @@ authenticate_server <- function(username, password, base_url, api_version = 3.4)
   )
 
   return(tableau)
+}
+
+#' Get the Tableau username from the environment variable
+#'
+#' @return The Tableau username stored in the TABLEAU_USERNAME environment variable.
+tableau_username <- function() {
+  username <- Sys.getenv("TABLEAU_USERNAME")
+  if (username == "") {
+    stop("TABLEAU_USERNAME environment variable is not set.")
+  }
+  return(username)
+}
+
+#' Get the Tableau password from the environment variable
+#'
+#' @return The Tableau password stored in the TABLEAU_PASSWORD environment variable.
+tableau_password <- function() {
+  password <- Sys.getenv("TABLEAU_PASSWORD")
+  if (password == "") {
+    stop("TABLEAU_PASSWORD environment variable is not set.")
+  }
+  return(password)
+}
+
+#' Get the Tableau base URL from the environment variable
+#'
+#' @return The Tableau base URL stored in the TABLEAU_BASE_URL environment variable.
+tableau_base_url <- function() {
+  base_url <- Sys.getenv("TABLEAU_BASE_URL")
+  if (base_url == "") {
+    stop("TABLEAU_BASE_URL environment variable is not set.")
+  }
+  return(base_url)
 }
