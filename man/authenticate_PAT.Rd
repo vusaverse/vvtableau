@@ -17,9 +17,13 @@ authenticate_PAT(
 
 \item{pat_secret}{The secret of the personal access token (PAT). Defaults to the `TABLEAU_PAT_SECRET` environment variable.}
 
-\item{content_url}{The URL of the content to authenticate. Defaults to the `TABLEAU_CONTENT_URL` environment variable.}
+\item{content_url}{The URL of the content to authenticate. Defaults to the `TABLEAU_CONTENT_URL` environment variable.
+For Tableau Server, this is typically the URL of the Tableau server followed by the site ID. For Tableau Cloud, this is usually the URL of the Tableau cloud workbook.}
 
-\item{base_url}{The base URL of the Tableau server or Tableau cloud. Defaults to the `TABLEAU_BASE_URL` environment variable.}
+\item{base_url}{The base URL of the Tableau server or Tableau cloud. Defaults to the `TABLEAU_BASE_URL` environment variable.
+For Tableau Server, this is usually the URL of the Tableau server. For Tableau Cloud, this is usually the URL of the Tableau cloud,
+and it must contain the pod name, such as 10az, 10ay, or us-east-1.
+For example, the base URL to sign in to a site in the 10ay pod would be: https://10ay.online.tableau.com.}
 
 \item{api_version}{The API version to use. Default is 3.4.}
 }
