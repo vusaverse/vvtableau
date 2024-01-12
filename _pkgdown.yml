@@ -37,6 +37,7 @@ reference:
   - title: Data Sources Methods
     desc: Data sources methods for Tableau REST API.
     contents:
+      - download_datasource
       - download_tableau_data
       - get_server_datasources
 
@@ -77,10 +78,10 @@ reference:
 #     contents:
 #       - None
 
-#   - title: Mobile Settings Methods
-#     desc: Mobile settings methods for Tableau REST API.
-#     contents:
-#       - None
+  - title: Mobile Settings Methods
+    desc: Mobile settings methods for Tableau REST API.
+    contents:
+      - get_mobile_security_settings
 
 #   - title: Notifications Methods
 #     desc: Notifications methods for Tableau REST API.

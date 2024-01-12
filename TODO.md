@@ -55,7 +55,7 @@
 -   [ ] Add Tags to Data Source
 -   [ ] Delete Data Source
 -   [ ] Delete Tag from Data Source
--   [ ] Download Data Source
+-   [x] Download Data Source
 -   [ ] Download Data Source Revision
 -   [ ] Get Data Source Revisions
 -   [ ] Publish Data Source
@@ -210,7 +210,7 @@
 -   [ ] Get Metric Data
 -   [ ] List Metrics for Site
 -   [ ] Update Metric
--   [ ] Get Mobile Security Settings for Server
+-   [x] Get Mobile Security Settings for Server
 -   [ ] Get Mobile Security Settings for Site
 -   [ ] Update Mobile Security Settings for Site
 -   [ ] Add User to Data-Driven Alert
