@@ -206,5 +206,6 @@ reference:
       - get_variables
       - get_workbook_id
       - get_workbook_tabs
+      - get_workbook_urls
       - make_rootnodes
 
