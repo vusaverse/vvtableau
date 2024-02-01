@@ -1,3 +1,9 @@
+# vvtableau 0.5.0
+* Fixes missing export tags.
+* Added page_number arguments.
+* Added a function to extract URLs from local workbooks using XML.
+* Added a function to download datasources.
+
 # vvtableau 0.4.0
 * Added Users and Groups Tableau REST Api methods.
 * Organized the reference page on package website.
