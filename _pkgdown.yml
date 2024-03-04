@@ -45,6 +45,7 @@ reference:
     desc: Extract and encryption methods for Tableau REST API.
     contents:
       - get_server_refresh_tasks
+      - run_extract_refresh_task
 
   - title: Favorites Methods
     desc: Favorites methods for Tableau REST API.

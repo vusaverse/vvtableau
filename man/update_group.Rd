@@ -80,6 +80,7 @@ Other Tableau REST API:
 \code{\link{query_user_on_site}()},
 \code{\link{remove_user_from_group}()},
 \code{\link{remove_user_from_site}()},
+\code{\link{run_extract_refresh_task}()},
 \code{\link{update_user}()}
 }
 \concept{Tableau REST API}
