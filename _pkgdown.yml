@@ -40,6 +40,7 @@ reference:
       - download_datasource
       - download_tableau_data
       - get_server_datasources
+      - update_data_source_now
 
   - title: Extract and Encryption Methods
     desc: Extract and encryption methods for Tableau REST API.

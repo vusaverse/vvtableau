@@ -4,7 +4,7 @@
 \alias{run_extract_refresh_task}
 \title{Run Extract Refresh Task}
 \usage{
-run_extract_refresh_task(tableau, task_id, api_version = "3.22")
+run_extract_refresh_task(tableau, task_id, api_version = 3.22)
 }
 \arguments{
 \item{tableau}{A list containing the Tableau authentication variables: `base_url`, `token`, and `site_id`.}
@@ -55,6 +55,7 @@ Other Tableau REST API:
 \code{\link{query_user_on_site}()},
 \code{\link{remove_user_from_group}()},
 \code{\link{remove_user_from_site}()},
+\code{\link{update_data_source_now}()},
 \code{\link{update_group}()},
 \code{\link{update_user}()}
 }

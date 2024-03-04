@@ -53,6 +53,7 @@ Other Tableau REST API:
 \code{\link{remove_user_from_group}()},
 \code{\link{remove_user_from_site}()},
 \code{\link{run_extract_refresh_task}()},
+\code{\link{update_data_source_now}()},
 \code{\link{update_group}()},
 \code{\link{update_user}()}
 }
