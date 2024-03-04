@@ -1,3 +1,8 @@
+# vvtableau 0.6.0
+* Added a function to run extract refresh task immediately on server.
+* Added a function to update a data source on server.
+* Added a function to update a workbook on server.
+
 # vvtableau 0.5.0
 * Fixes missing export tags.
 * Added page_number arguments.
