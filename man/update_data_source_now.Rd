@@ -57,6 +57,7 @@ Other Tableau REST API:
 \code{\link{remove_user_from_site}()},
 \code{\link{run_extract_refresh_task}()},
 \code{\link{update_group}()},
-\code{\link{update_user}()}
+\code{\link{update_user}()},
+\code{\link{update_workbook_now}()}
 }
 \concept{Tableau REST API}

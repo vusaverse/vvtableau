@@ -175,6 +175,7 @@ reference:
       - download_workbooks_server_powerpoint
       - get_server_views
       - get_server_workbooks
+      - update_workbook_now
 
   - title: Helperfunctions
     desc: Underlying helperfunctions for Tableau REST API.
