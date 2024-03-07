@@ -10,6 +10,9 @@
 #' @return NULL
 #' @family Tableau REST API
 #'
+#' @note If a crosstab is exported from a dashboard, data from only the first view in the dashboard will appear in the .xlsx file.
+#' Downloads of data from story dashboards are not supported at this time.
+#'
 #' @export
 download_tableau_crosstab_excel <- function(tableau, view_id, path_to_save, api_version = 3.16) {
   base_url <- tableau$base_url

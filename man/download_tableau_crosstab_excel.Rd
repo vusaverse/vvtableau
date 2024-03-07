@@ -23,6 +23,10 @@ download_tableau_crosstab_excel(
 \description{
 Downloads the crosstab data from a Tableau view in Excel format.
 }
+\note{
+If a crosstab is exported from a dashboard, data from only the first view in the dashboard will appear in the .xlsx file.
+Downloads of data from story dashboards are not supported at this time.
+}
 \seealso{
 Other Tableau REST API: 
 \code{\link{add_tags_to_view}()},
