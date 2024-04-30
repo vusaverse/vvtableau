@@ -212,3 +212,15 @@ reference:
       - get_workbook_urls
       - make_rootnodes
 
+articles:
+- title: Get started
+  navbar: ~
+  contents:
+  - getting_started
+  - data_management
+  - user_management
+
+- title: Automate
+  navbar: Automation
+  contents:
+  - download_filtered_views

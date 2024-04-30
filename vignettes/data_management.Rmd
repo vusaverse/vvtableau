@@ -1,0 +1,86 @@
+---
+title: "Monitoring Tableau Server Datasources"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Monitoring Tableau Server Datasources}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  eval = FALSE
+)
+```
+
+```{r setup}
+library(vvtableau)
+
+# Authenticate on the Tableau Server.
+tableau <- authenticate_server(
+  server = "https://tableau.server.com",
+  username = "your_username",
+  password = "your_password"
+)
+
+
+```
+
+# Introduction
+
+The `vvtableau` package provides a set of functions to interact with Tableau Server, allowing you to automate various administrative tasks. In this vignette, we'll focus on how to identify and monitor Tableau Server datasources that are not connected to any workbooks.
+
+# Identifying Unused Datasources
+To identify unused datasources on the Tableau Server, we'll use the `get_server_datasources()` function to retrieve a list of all datasources, and then filter out those that are not connected to any workbooks.
+
+
+```{r}
+
+# Retrieve all datasources from Tableau Server
+all_datasources <- get_server_datasources(tableau_server)
+
+# Filter out datasources that are not connected to any workbooks
+unused_datasources <- all_datasources %>%
+  filter(connectedWorkbooksCount == 0) %>%
+  select(project_name, name, size)
+
+```
+
+
+In this example, we:
+
+- Retrieve all datasources from the Tableau Server using the `get_server_datasources()` function.
+- Filter out the datasources that have a connectedWorkbooksCount of 0, indicating that they are not connected to any workbooks.
+- Select the relevant columns (project name, datasource name, and size).
+
+# Notifying Administrators
+Once you have the list of unused datasources, you can use your preferred method to notify the administrators. This could be sending an email, posting a message in a chat channel, or any other communication method. Here's an example of how you could send a message to a Slack channel:
+
+
+```{r}
+
+library(slackr)
+## Assuming you have authenticated with Slack using slackr_setup() and have access to the channel.
+
+
+slackr::slackr(channel = "#tableau-notifications",
+               text = "The following datasources on the server have no connection to a workbook. Data sorted by size (in MB):")
+
+slackr::slackr_table(unused_datasources,
+                    channel = "#tableau-notifications",
+                    quote = FALSE)
+
+slackr::slackr(channel = "#tableau-notifications",
+               text = paste0("This amounts to approximately ", sum(as.integer(unused_datasources$size)), "MB on the server."))
+
+```
+
+
+
+This code will send a message to the `#tableau-notifications` Slack channel, followed by a table of the unused datasources sorted by size. Finally, it will send a message with the total size of the unused datasources.
+
+
+# Conclusion
+The `vvtableau` package provides a convenient way to automate the process of identifying unused Tableau Server datasources and notifying the appropriate administrators. By using this package, you can ensure that your Tableau Server is being used efficiently and that unnecessary datasources are properly managed.

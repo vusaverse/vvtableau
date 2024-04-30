@@ -1,0 +1,91 @@
+---
+title: "Automating Tableau Server User Management"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Automating Tableau Server User Management}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  eval = FALSE
+)
+```
+
+```{r setup}
+library(vvtableau)
+
+# Authenticate on the Tableau Server.
+tableau <- authenticate_server(
+  server = "https://tableau.server.com",
+  username = "your_username",
+  password = "your_password"
+)
+
+
+```
+
+
+# Introduction
+The `vvtableau `package provides a set of functions to interact with Tableau Server, allowing you to automate various user management tasks. This vignette will focus on how to use the package to identify and notify administrators about inactive Tableau users.
+
+
+# Identifying Inactive Tableau Users
+To identify inactive Tableau users, we'll use the `get_server_users()` function to retrieve a list of all users on the Tableau Server, and then filter out those who have not logged in for a specified period of time.
+
+```{r}
+
+# Retrieve all users from Tableau Server
+all_users <- get_server_users(tableau, page_size = 300, page_number = 1)
+
+# Filter out inactive users
+inactive_users <- all_users %>%
+  mutate(last_login = as.Date(last_login)) %>%
+  filter(!name %in% protected_users$user_id,
+         site_role == "Viewer") %>%
+  arrange(desc(last_login)) %>%
+  unique(by = "name") %>%
+  filter(last_login < (Sys.Date() - lubridate::years(1) - lubridate::months(6)) | is.na(last_login)) %>%
+  filter(!is.na(last_login)) %>%
+  select(full_name, name, last_login)
+
+```
+
+
+In this example, we:
+
+- Retrieve all users from the Tableau Server using the `get_server_users()` function.
+- Filter out users who are in the protected_users data frame (assuming this contains a list of users that should be excluded from the inactive user list).
+- Filter out users who are not in the "Viewer" site role.
+- Arrange the users by their last log-in date in descending order and keep only the unique users (in case a user has multiple site roles).
+- Filter out users who have not logged in for more than 1.5 years or have a missing last log-in date, the latter group being those who recently joined and have yet to log in for the first time.
+- Select the relevant columns (full name, username, and last log-in date).
+
+# Notifying Administrators
+
+Once you have the list of inactive users, you can use your preferred method to notify the administrators. This could be sending an email, posting a message in a chat channel, or any other communication method. Here's an example of how you could send a message to a Slack channel:
+
+
+```{r}
+
+
+library(slackr)
+## Assuming you have authenticated with Slack using slackr_setup() and have access to the channel.
+
+slackr::slackr(channel = "#tableau-notifications",
+               text = "The following users have not logged in to Tableau Server for more than 1.5 years:")
+
+slackr::slackr_table(inactive_users,
+                    channel = "#tableau-notifications",
+                    quote = FALSE)
+
+```
+
+
+This code will send a message to the `#tableau-notifications` Slack channel, followed by a table of the inactive users.
+
+# Conclusion
+The `vvtableau` package provides a convenient way to automate the process of identifying inactive Tableau users and notifying the appropriate administrators. By using this package, you can ensure that your Tableau Server is being used effectively and that inactive accounts are properly managed.
