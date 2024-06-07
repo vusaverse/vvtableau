@@ -4,7 +4,14 @@
 \alias{download_tableau_data}
 \title{Download Tableau view data as Excel}
 \usage{
-download_tableau_data(tableau, view_id, path_to_save, api_version = 3.8)
+download_tableau_data(
+  tableau,
+  view_id,
+  path_to_save,
+  api_version = 3.8,
+  filters = NULL,
+  max_age = NULL
+)
 }
 \arguments{
 \item{tableau}{A list containing the Tableau authentication variables: `base_url`, `token`, `user_id`, and `site_id`.}
@@ -14,9 +21,36 @@ download_tableau_data(tableau, view_id, path_to_save, api_version = 3.8)
 \item{path_to_save}{The directory to write the data Excel file to.}
 
 \item{api_version}{The API version to use (default: 3.8).}
+
+\item{filters}{A named list of filters to apply to the view data. The names should be the field names, and the values should be the filter values.}
+
+\item{max_age}{The maximum number of minutes view data will be cached before being refreshed (optional).}
 }
 \description{
 Downloads the data from a Tableau view in Excel format.
+}
+\details{
+This function uses the Tableau REST API to download data from a specified view in Excel format.
+It constructs the appropriate URL, applies any specified filters, and saves the data to the specified path.
+
+For more information on the Tableau REST API, see the official documentation for this method:
+\url{https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_ref.htm#query_view_data}
+}
+\examples{
+\dontrun{
+tableau <- list(
+  base_url = "https://your-tableau-server.com/",
+  token = "your-auth-token",
+  user_id = "your-user-id",
+  site_id = "your-site-id"
+)
+view_id <- "your-view-id"
+path_to_save <- "path/to/save/"
+filters <- list("Region" = "North America", "Category" = "Technology")
+max_age <- 10
+download_tableau_data(tableau, view_id, path_to_save, filters = filters, max_age = max_age)
+}
+
 }
 \seealso{
 Other Tableau REST API: 
