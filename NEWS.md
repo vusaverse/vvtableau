@@ -1,3 +1,8 @@
+# vvtableau 0.7.0
+* Updated function to get a list of all projects on the server.
+* Added all possible arguments to the `download_tableau_date` function.
+* Added vignettes on data and user management.
+
 # vvtableau 0.6.0
 * Added a function to run extract refresh task immediately on server.
 * Added a function to update a data source on server.
