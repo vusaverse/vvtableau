@@ -2,6 +2,11 @@
 #'
 #' Downloads PNG images of filtered Tableau views based on the provided dataframe containing filter columns and filter values.
 #'
+#' This function sanitizes filenames by removing forbidden characters.
+#' However, there is a risk of overwriting existing images if the only difference in filter values
+#' is the presence of forbidden characters.
+#' Users should be aware of this potential issue when using the function.
+#'
 #' @param tableau A list containing the Tableau authentication variables: `base_url`, `token`, `user_id`, and `site_id`.
 #' @param df Dataframe containing filter columns and filter values.
 #' @param view_id The ID of the view to download.
@@ -65,17 +70,17 @@ row_to_query <- function(row) {
   return(query)
 }
 
-#' Concat row to name
+#' Concat row to name with sanitization
 #'
 #' @param row row of dataframe
 #'
-#' @return namr of the row
+#' @return sanitized name of the row
 row_to_name <- function(row) {
   # Use paste to concatenate "vf_", column names, "=", and row values
   filter_strs <- paste0(as.character(row), collapse = "")
 
-  # Combine the filter strings with "&" and prepend "?"
-  query <- paste0((filter_strs))
+  # Sanitize the filename by removing forbidden characters
+  sanitized_name <- gsub("[<>:\"/\\|?*]", "_", filter_strs)  # Replace forbidden characters with underscore
 
-  return(query)
+  return(sanitized_name)
 }
