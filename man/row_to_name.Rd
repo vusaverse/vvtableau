@@ -2,7 +2,7 @@
 % Please edit documentation in R/download_view_filtered.R
 \name{row_to_name}
 \alias{row_to_name}
-\title{Concat row to name}
+\title{Concat row to name with sanitization}
 \usage{
 row_to_name(row)
 }
@@ -10,8 +10,8 @@ row_to_name(row)
 \item{row}{row of dataframe}
 }
 \value{
-namr of the row
+sanitized name of the row
 }
 \description{
-Concat row to name
+Concat row to name with sanitization
 }
