@@ -7,6 +7,11 @@
 [![CRAN last month downloads](https://cranlogs.r-pkg.org/badges/last-month/vvtableau?color=green/)](https://cran.r-project.org/package=vvtableau/)
 [![CRAN last month downloads](https://cranlogs.r-pkg.org/badges/grand-total/vvtableau?color=green/)](https://cran.r-project.org/package=vvtableau/)
 
+# Call for New Maintainer
+> [!IMPORTANT]
+> Due to a strategic transition from Tableau to Power BI at my workplace, I can no longer maintain this package. If you're interested in taking over maintenance or co-maintaining, please refer to pinned [issue #12](https://github.com/vusaverse/vvtableau/issues/12).
+
+
 The `vvtableau` package is an R interface for interacting with Tableau Server using the Tableau REST API. It provides a convenient way to automate Tableau tasks, such as publishing workbooks, refreshing data extracts, managing users and groups, and retrieving information about server objects directly from R. Additionally, it includes functions to download filtered views, workbooks, and export them to different formats like PDF and PowerPoint.
 
 Furthermore, methods are included to interact with Tableau desktop. These methods allow you to retrieve information from workbooks and to change them.
