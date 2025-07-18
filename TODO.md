@@ -67,7 +67,7 @@
 -   [ ] Update Data in Hyper Data Source
 -   [ ] Update Data Source
 -   [ ] Update Data Source Connection
--   [ ] Update Data Source Now
+-   [x] Update Data Source Now
 -   [ ] Create an Extract for a Data Source
 -   [ ] Create Cloud extract refresh task - Not available for Tableau Server.
 -   [ ] Create Extracts for Embedded Data Sources in a Workbook
@@ -80,7 +80,7 @@
 -   [ ] List Extract Refresh Tasks in Server Schedule - Not available for Tableau Cloud.
 -   [x] List Extract Refresh Tasks in Site
 -   [ ] Reencrypt Extracts in a Site
--   [ ] Run Extract Refresh Task
+-   [x] Run Extract Refresh Task
 -   [ ] Update Cloud extract refresh task - Not available for Tableau Server.
 -   [ ] Add Data Source to Favorites
 -   [ ] Add Flow to Favorites
@@ -265,7 +265,7 @@
 -   [ ] Delete Server Session
 -   [ ] Get Current Server Session
 -   [ ] List Server Active Directory Domains - Not available for Tableau Cloud.
--   [ ] Server Info
+-   [x] Server Info
 -   [ ] Update Server Active Directory Domain - Not available for Tableau Cloud.
 -   [ ] Create Site - Not available for Tableau Cloud.
 -   [ ] Delete Site - Not available for Tableau Cloud.
@@ -336,4 +336,4 @@
 -   [ ] Update Custom View
 -   [ ] Update Workbook
 -   [ ] Update Workbook Connection
--   [ ] Update Workbook Now
+-   [x] Update Workbook Now
