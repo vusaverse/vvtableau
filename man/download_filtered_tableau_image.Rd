@@ -26,6 +26,12 @@ download_filtered_tableau_image(
 \description{
 Downloads PNG images of filtered Tableau views based on the provided dataframe containing filter columns and filter values.
 }
+\details{
+This function sanitizes filenames by removing forbidden characters.
+However, there is a risk of overwriting existing images if the only difference in filter values
+is the presence of forbidden characters.
+Users should be aware of this potential issue when using the function.
+}
 \seealso{
 Other Tableau REST API: 
 \code{\link{add_tags_to_view}()},
